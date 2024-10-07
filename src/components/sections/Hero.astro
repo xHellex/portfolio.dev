@@ -1,0 +1,61 @@
+---
+const personalImageAlt = "Felipe Peñaloza";
+import Badge from "../Badge.astro";
+import LinkedIn from "../../icons/LinkedIn.astro";
+import MailIcon from "../../icons/Mail.astro";
+import SocialPill from "../SocialPill.astro";
+import GitHub from "../../icons/GitHub.astro";
+import CV from "../../icons/CV.astro";
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/me.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/felipe-andres-penaloza-oyarzun/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponibilidad Inmediata</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-600 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Felipe Peñaloza
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-500 dark:[&>strong]:text-blue-400 [&>strong]:text-blue-500 [&>strong]:font-semibold dark:text-gray-200 text-pretty"
+  >
+    +5 años de experiencia <strong
+      >Front-end Developer, Javascript, React Js, Astro, Boostrap, Tailwind</strong
+    >. De Santiago, Chile. Me especializo en Responsive web design,
+    Implementaciones, UX Experiencie.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:felipe.p_94@hotmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill
+      href="https://www.linkedin.com/in/felipe-andres-penaloza-oyarzun/"
+    >
+      <LinkedIn class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/xHellex">
+      <GitHub class="size-4" />
+      GitHub
+    </SocialPill>
+
+    <SocialPill href="https://cv-felipe-penaloza.netlify.app/">
+      <CV class="size-4" />
+      CV-Print
+    </SocialPill>
+  </nav>
+</div>

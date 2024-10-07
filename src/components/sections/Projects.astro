@@ -1,0 +1,135 @@
+---
+import GitHub from "../../icons/GitHub.astro";
+import NextJS from "../../icons/NextJS.astro";
+import Tailwind from "../../icons/Tailwind.astro";
+import Boostrap from "../../icons/Boostrap.astro";
+import Liferay from "../../icons/Liferay.astro";
+import Wordpress from "../../icons/Wordpress.astro";
+import Link from "../../icons/Link.astro";
+import javascript from "../../icons/javascript.astro";
+import LinkButton from "../LinkButton.astro";
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#003159] text-white",
+    icon: javascript,
+  },
+  BOOSTRAP: {
+    name: "Boostrap",
+    class: "bg-[#003159] text-white",
+    icon: Boostrap,
+  },
+  LIFERAY: {
+    name: "Liferay",
+    class: "bg-[#003159] text-white",
+    icon: Liferay,
+  },
+  WORDPRESS: {
+    name: "Wordpress",
+    class: "bg-[#003159] text-white",
+    icon: Wordpress,
+  },
+};
+const PROJECTS = [
+  //{
+  //  title: "Sencillito.com",
+  //description: "Plataforma de pago de cuentas y recargas.",
+  //link: "https://www.sencillito.com",
+  //github: "#",
+  //image: "/projects/svgl.webp",
+  //tags: [TAGS.NEXT, TAGS.TAILWIND],
+  //},
+  {
+    title: "Sencillito.com",
+    description:
+      "Plataforma de pago de cuentas y recargas. Implementación proceso de pago de cuentas, Desarrollo Voucher impreso, Mantenimiento UX Experience.",
+    link: "https://www.sencillito.com",
+    image: "/projects/sencillito-web.webp",
+    tags: [TAGS.JAVASCRIPT, TAGS.BOOSTRAP, TAGS.LIFERAY],
+  },
+  {
+    title: "Fici",
+    description:
+      "Plataforma digital para cine e innovación. Responsive Design, Formularios web, UX Experience.",
+    link: "https://www.fici.cl/",
+    image: "/projects/fici-web.webp",
+    tags: [TAGS.JAVASCRIPT, TAGS.BOOSTRAP],
+  },
+  {
+    title: "Copahue",
+    description:
+      "Proyecto Inmobiliaria y constructora. Formularios, Responsive Design.",
+    link: "https://copahue.cl/",
+    image: "/projects/copahue.webp",
+    tags: [TAGS.JAVASCRIPT, TAGS.WORDPRESS, TAGS.BOOSTRAP],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img
+              alt="Platafor Sencillito.com pagos y recargas"
+              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-blue-500 dark:text-blue-500">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <div class="mt-2 text-gray-500 dark:text-gray-300 text-pretty">
+              {description}
+            </div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github && (
+                <LinkButton href={github}>
+                  <GitHub class="size-6" />
+                  Code
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</div>
