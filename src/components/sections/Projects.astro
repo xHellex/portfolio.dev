@@ -1,5 +1,4 @@
 ---
-import GitHub from "../../icons/GitHub.astro";
 import NextJS from "../../icons/NextJS.astro";
 import Tailwind from "../../icons/Tailwind.astro";
 import Boostrap from "../../icons/Boostrap.astro";
@@ -8,81 +7,24 @@ import Wordpress from "../../icons/Wordpress.astro";
 import Link from "../../icons/Link.astro";
 import javascript from "../../icons/javascript.astro";
 import LinkButton from "../LinkButton.astro";
+import { cv } from "@/lib/cv";
 
-const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
-  },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
-  },
-  JAVASCRIPT: {
-    name: "JavaScript",
-    class: "bg-[#003159] text-white",
-    icon: javascript,
-  },
-  BOOSTRAP: {
-    name: "Boostrap",
-    class: "bg-[#003159] text-white",
-    icon: Boostrap,
-  },
-  LIFERAY: {
-    name: "Liferay",
-    class: "bg-[#003159] text-white",
-    icon: Liferay,
-  },
-  WORDPRESS: {
-    name: "Wordpress",
-    class: "bg-[#003159] text-white",
-    icon: Wordpress,
-  },
+const TAG_ICONS: Record<string, { class: string; icon: any }> = {
+  "Next.js": { class: "bg-black text-white", icon: NextJS },
+  "Tailwind CSS": { class: "bg-[#003159] text-white", icon: Tailwind },
+  JavaScript: { class: "bg-[#003159] text-white", icon: javascript },
+  Bootstrap: { class: "bg-[#003159] text-white", icon: Boostrap },
+  Liferay: { class: "bg-[#003159] text-white", icon: Liferay },
+  WordPress: { class: "bg-[#003159] text-white", icon: Wordpress },
 };
-const PROJECTS = [
-  //{
-  //  title: "Sencillito.com",
-  //description: "Plataforma de pago de cuentas y recargas.",
-  //link: "https://www.sencillito.com",
-  //github: "#",
-  //image: "/projects/svgl.webp",
-  //tags: [TAGS.NEXT, TAGS.TAILWIND],
-  //},
-  {
-    title: "Sencillito.com",
-    description:
-      "Plataforma de pago de cuentas y recargas. Implementación proceso de pago de cuentas, Desarrollo Voucher impreso, Mantenimiento UX Experience.",
-    link: "https://www.sencillito.com",
-    image: "/projects/sencillito-web.webp",
-    tags: [TAGS.JAVASCRIPT, TAGS.BOOSTRAP, TAGS.LIFERAY],
-  },
-  {
-    title: "Nescafé",
-    description:
-      "Sitio web de la marca Nescafé. Responsive Design, Formularios web, UX Experience.",
-    link: "https://www.nescafe.com/cl/",
-    image: "/projects/nescafe.webp",
-    tags: [TAGS.JAVASCRIPT, TAGS.BOOSTRAP],
-  },
-  {
-    title: "Fici",
-    description:
-      "Plataforma digital para cine e innovación. Responsive Design, Formularios web, UX Experience.",
-    link: "https://www.fici.cl/",
-    image: "/projects/fici-web.webp",
-    tags: [TAGS.JAVASCRIPT, TAGS.BOOSTRAP],
-  },
-  {
-    title: "Copahue",
-    description:
-      "Proyecto Inmobiliaria y constructora. Formularios, Responsive Design.",
-    link: "https://copahue.cl/",
-    image: "/projects/copahue.webp",
-    tags: [TAGS.JAVASCRIPT, TAGS.WORDPRESS, TAGS.BOOSTRAP],
-  },
-];
+
+const PROJECTS = cv.projects.map(({ name, description, highlights, url, image, tags }) => ({
+  title: name,
+  description: `${description}. ${highlights.join(", ")}.`,
+  link: url,
+  image,
+  tags: (tags ?? []).map((tag) => ({ name: tag, ...TAG_ICONS[tag] })),
+}));
 ---
 
 <div class="flex flex-col gap-y-16">
@@ -92,7 +34,7 @@ const PROJECTS = [
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
-              alt="Platafor Sencillito.com pagos y recargas"
+              alt={title}
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
               loading="lazy"
               src={image}

@@ -1,56 +1,24 @@
 ---
 import ExperienceItems from "../ExperienceItems.astro";
-const EXPERIENCE = [
-  {
-    date: "Feb 2025 - Abr 2026",
-    title: "Webmaster",
-    company: "Publicis Groupe",
-    description:
-      "Mantenimiento CSM (Drupal, Wordpress, AEM), desarrollo de landings, html, css para email marketing, formularios.",
-  },
-  {
-    date: "Jul 2021 - Feb 2024",
-    title: "Front-End Developer",
-    company: "IGT",
-    description:
-      "Desarrollo e implemento servicios y UX Experience a plataforma de pago de cuentas Sencillito.com.",
-  },
-  {
-    date: "Jul 2018 - Jun 2021",
-    title: "Desarrollador Front-End",
-    company: "Grupo B&L",
-    description:
-      "Desarrollo sitios de inmobiliarias, mantenimiento a sitios corporativos, BBDD y implementación de Google Analitycs, mantenimiento y gestión de plataformas de correo masivos atraves de Mailchimp y Doppler.",
-  },
-  {
-    date: "Dic 2017 - Abr 2018",
-    title: "Diseñador Web",
-    company: "Xpectrum Technologies",
-    description:
-      "Diseño y desarrollo sitios web ecommerces e intranets, diseño y armado de email marketing.",
-  },
-  {
-    date: "Ago 2017 - Nov 2018",
-    title: "Diseñador Web",
-    company: "Digital Beat Spa",
-    description:
-      "Desarrollo maquetas para sitios web y landings de sitios corporativos, diseño piezas gráficas para banners, promocionales y email marketing.",
-  },
-  {
-    date: "Ene 2017 - Abr 2018",
-    title: "Director de Art",
-    company: "Agencia Publis",
-    description:
-      "Diseño, desarrollo y mantuvo sitios web, diseño gráficas y material de apoyo para marcas.",
-  },
-  {
-    date: "Dic 2015 - Ene 2017",
-    title: "Diseñador web",
-    company: "Inventa S.A.",
-    description:
-      "Diseño y mantuvo sitios web y landings de ecommerce, diseño banners y campañas de email marketing.",
-  },
+import { cv } from "@/lib/cv";
+
+const MESES = [
+  "Ene", "Feb", "Mar", "Abr", "May", "Jun",
+  "Jul", "Ago", "Sep", "Oct", "Nov", "Dic",
 ];
+
+function formatDate(date: string | null) {
+  if (!date) return "Presente";
+  const [year, month] = date.split("-");
+  return `${MESES[Number(month) - 1]} ${year}`;
+}
+
+const EXPERIENCE = cv.work.map((job) => ({
+  date: `${formatDate(job.startDate)} - ${formatDate(job.endDate)}`,
+  title: job.position,
+  company: job.location ? `${job.name} · ${job.location}` : job.name,
+  description: job.highlights.join(" "),
+}));
 ---
 
 <ol class="relative mt-16">

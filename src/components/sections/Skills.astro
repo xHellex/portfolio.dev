@@ -1,30 +1,25 @@
 ---
-import { skills } from "../../../cv.json";
+import { cv } from "@/lib/cv";
+const { skills } = cv;
 ---
 
-<ul>
+<div class="flex flex-col gap-6">
   {
-    skills.map(({ name }) => (
-      <li>
-        <span class="inline-flex items-center justify-center gap-2 px-4 py-1 text-gray-800 transition bg-gray-100 border border-gray-300 rounded-full dark:bg-gray-800 dark:border-gray-600 dark:text-white focus-visible:ring-yellow-500/80 text-md hover:bg-gray-900 hover:border-gray-700 hover:text-white dark:hover:bg-gray-100 dark:hover:border-gray-300 dark:hover:text-black group max-w-fit focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black">
+    skills.map(({ name, keywords }) => (
+      <div>
+        <h4 class="mb-2 text-sm font-semibold text-gray-500 dark:text-gray-400">
           {name}
-        </span>
-      </li>
+        </h4>
+        <ul class="inline-flex flex-wrap gap-2">
+          {keywords.map((keyword) => (
+            <li>
+              <span class="inline-flex items-center justify-center gap-2 px-4 py-1 text-gray-800 transition bg-gray-100 border border-gray-300 rounded-full dark:bg-gray-800 dark:border-gray-600 dark:text-white focus-visible:ring-yellow-500/80 text-md hover:bg-gray-900 hover:border-gray-700 hover:text-white dark:hover:bg-gray-100 dark:hover:border-gray-300 dark:hover:text-black group max-w-fit focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black">
+                {keyword}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
     ))
   }
-</ul>
-
-<style>
-  ul {
-    display: inline-flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  li {
-    border-radius: 6px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 0.2rem 0.6rem;
-  }
-</style>
+</div>

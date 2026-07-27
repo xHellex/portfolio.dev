@@ -1,232 +1,256 @@
 {
-    "basics": {
-      "name": "Felipe Peñaloza Oyarzún",
-      "label": "Front-End Developer con más de 5 años de experiencia",
-      "image": "/me.webp",
-      "email": "felipe.p_94@hotmail.com",
-      "phone": "+56 983426103",
-      "url": null,
-      "summary": "Desarrollador Web como Front-End Developer con tecnologías Javascript, React Js y Astro. Profesional con experiencia en metodología ágil Scrum, analítico, investigativo, trabajo en equipo y enfoque en resolución de problemas. Interés en desarrollo de start-ups, proyectos de videojuegos, empresas multinacionales, reconocimiento en desarrollo e implementación de experiencia de usuario, procesos de pago, tracking analytics, implementación de voucher.",
-      "location": {
-        "address": "",
-        "postalCode": "",
-        "city": "Puente Alto",
-        "countryCode": "CHL",
-        "region": "Chile"
+  "basics": {
+    "name": "Felipe Peñaloza Oyarzún",
+    "label": "Desarrollador Full Stack con más de 5 años de experiencia",
+    "image": "/me.webp",
+    "email": "felipe.p_94@hotmail.com",
+    "phone": "+56 9 8342 6103",
+    "url": null,
+    "summary": "Desarrollador Full-Stack con más de 5 años construyendo interfaces de producción y, cada vez más, los servicios que las sostienen. Mi base está en JavaScript moderno (React, Astro), HTML5 y CSS3, pero mi trabajo diario ya cruza hacia el backend: integración de pasarelas de pago y validación de flujos transaccionales en Sencillito.com, consumo y diseño de APIs, y una base sólida en Java, Spring Boot, PostgreSQL y Oracle PL/SQL que estoy profundizando en mis estudios de Análisis de Sistemas Computacionales en DUOC UC. Me interesa el ciclo completo: del componente accesible en pantalla a la consulta SQL que le da los datos.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Santiago",
+      "countryCode": "CHL",
+      "region": "Chile"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Felipe Peñaloza Oyarzún",
+        "url": "https://linkedin.com/in/felipe-andres-penaloza-oyarzun"
       },
-      "profiles": [
-        {
-          "network": "LinkedIn",
-          "username": "Felipe Peñaloza Oyarzún",
-          "url": "https://linkedin.com/in/felipe-andres-penaloza-oyarzun"
-        },
-        {
-          "network": "GitHub",
-          "username": "xHellex",
-          "url": "https://github.com/xHellex"
-        }
+      {
+        "network": "GitHub",
+        "username": "xHellex",
+        "url": "https://github.com/xHellex"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Proyectos Freelance",
+      "position": "Desarrollador Full Stack",
+      "url": null,
+      "location": "Chile",
+      "startDate": "2026-04-22",
+      "endDate": null,
+      "summary": "Diseño, desarrollo e implementación de aplicaciones web escalables utilizando Java, Spring Boot, React y PostgreSQL. Creación de APIs RESTful y gestión de bases de datos relacionales.",
+      "highlights": [
+        "Diseño e implementación de aplicaciones web escalables con Java, Spring Boot, React y PostgreSQL",
+        "Creación de APIs RESTful",
+        "Gestión y modelado de bases de datos relacionales"
       ]
     },
-    "work": [
-      {
-        "name": "IGT",
-        "position": "Front-End Developer",
-        "url": null,
-        "startDate": "2021-07-07",
-        "endDate": "2024-02-29",
-        "summary": "Desarrollo e implemento servicios y UX Experience a plataforma de pago de cuentas Sencillito.com.",
-        "highlights": [
-          null
-        ]
-      },
-      {
-        "name": "Grupo B&L",
-        "position": "Front-End Developer",
-        "url": null,
-        "startDate": "2018-07-01",
-        "endDate": "2021-06-31",
-        "summary": "Desarrollo sitios de inmobiliarias, mantenimiento a sitios corporativos, BBDD y implementación de Google Analitycs, mantenimiento y gestión de plataformas de correo masivos atraves de Mailchimp y Doppler.",
-        "highlights": [
-          null
-        ]
-      },
-      {
-        "name": "Expectrum Technologies",
-        "position": "Diseñador Web",
-        "startDate": "2017-12-01",
-        "endDate": "2018-04-31",
-        "summary": "Diseño y desarrollo sitios web ecommerces e intranets, diseño y armado de email marketing.",
-        "highlights": [
-          null
-        ]
-      },
-      {
-        "name": "Digital Beat Spa",
-        "position": "Diseñador Web",
-        "startDate": "2017-08-05",
-        "endDate": "2017-11-30",
-        "summary": "Desarrollo maquetas para sitios web y landings de sitios corporativos, diseño piezas gráficas para banners, promocionales y email marketing.",
-        "highlights": [
-          null
-        ]
-      },
-      {
-        "name": "Agencia Publis",
-        "position": "Director de Arte",
-        "startDate": "2017-01-15",
-        "endDate": "2017-04-31",
-        "summary": "Diseño, desarrollo y mantuvo sitios web, diseño gráficas y material de apoyo para marcas.",
-        "highlights": [
-          null
-        ]
-      },
-      {
-        "name": "Inventa S.A",
-        "position": "Diseñador Web",
-        "startDate": "2015-12-01",
-        "endDate": "2017-01-15",
-        "summary": "Diseño y mantuvo sitios web y landings de ecommerce, diseño banners y campañas de email marketing.",
-        "highlights": [
-          null
-        ]
-      }
-    ],
-    "education": [{
+    {
+      "name": "Publicis Groupe",
+      "position": "Webmaster",
+      "url": null,
+      "location": "Santiago, Chile",
+      "startDate": "2025-02-01",
+      "endDate": "2026-04-30",
+      "summary": "Desarrollo de componentes personalizados para Drupal y mantenimiento de landings en AEM. Implementación de formularios complejos, concursos y campañas digitales multi-dispositivo. Maquetación de correos electrónicos en HTML optimizados para Salesforce Marketing Cloud.",
+      "highlights": [
+        "Desarrollo de componentes personalizados para Drupal y mantenimiento de landings en AEM",
+        "Formularios y campañas conectados a Salesforce Marketing Cloud, gestionando el flujo de datos de envío entre el frontend y la plataforma de automatización",
+        "Maquetación de correos electrónicos en HTML optimizados para Salesforce Marketing Cloud"
+      ]
+    },
+    {
+      "name": "IGT (Sencillito.com)",
+      "position": "Front-End Developer",
+      "url": "https://www.sencillito.com",
+      "location": "Chile",
+      "startDate": "2021-07-01",
+      "endDate": "2024-02-29",
+      "summary": "Desarrollo de componentes front-end para Liferay y mantenimiento de la plataforma de pagos con JavaScript. Integración de medios de pago, validaciones de tarjetas y arquitectura de flujos seguros.",
+      "highlights": [
+        "Integración end-to-end de medios de pago: conexión con pasarelas externas, validación de tarjetas en cliente y servidor, y diseño de flujos transaccionales seguros sobre Liferay",
+        "Optimización de rendimiento",
+        "Cumplimiento de estándares de accesibilidad (WCAG)"
+      ]
+    },
+    {
+      "name": "Grupo B&L",
+      "position": "Front-End Developer",
+      "url": null,
+      "location": "Santiago, Chile",
+      "startDate": "2018-07-01",
+      "endDate": "2021-06-30",
+      "summary": "Desarrollo de sitios web en WordPress, creación de themes personalizados y optimización de plugins. Construcción de sitios web corporativos e inmobiliarios utilizando HTML5, CSS3 y JavaScript.",
+      "highlights": [
+        "Desarrollo de sitios web en WordPress y themes personalizados",
+        "Construcción de sitios corporativos e inmobiliarios",
+        "Gestión de campañas en Mailchimp/Doppler",
+        "Integración con Google Analytics"
+      ]
+    },
+    {
+      "name": "Inventa S.A., Agencia Publis, Digital Beat SpA",
+      "position": "Diseñador y Desarrollador Web",
+      "url": null,
+      "startDate": "2015-01-01",
+      "endDate": "2018-12-31",
+      "summary": "Roles enfocados en maquetación, diseño de intranets y campañas de email marketing.",
+      "highlights": [
+        "Maquetación y diseño de intranets",
+        "Desarrollo de campañas de email marketing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "DUOC UC",
+      "url": "https://www.duoc.cl/",
+      "area": "Analista Programador Computacional",
+      "studyType": "Educación Superior",
+      "startDate": "2025-03-11",
+      "endDate": null,
+      "score": "",
+      "courses": []
+    },
+    {
       "institution": "Universidad Gabriela Mistral",
       "url": "https://www.ugm.cl/",
-      "area": "Producción Crossmedia - Especialidad Desarrollo Web",
-      "studyType": "Bachelor",
+      "area": "Productor Crossmedia",
+      "studyType": "Educación Superior",
       "startDate": "2013-03-11",
-      "endDate": "2015-11-30",
-      "score": "5.0",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
-    }],
-    "awards": [{
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }],
-    "certificates": [{
-      "name": "Web Developer",
+      "endDate": "2017-11-28",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Web Developer (Curso intensivo)",
       "date": "2021-12-07",
       "issuer": "Escalab",
       "url": "https://www.credly.com/badges/f8b05633-3770-4ba6-8c2f-887cb393e0ba?source=linked_in_profile"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
-    }],
-    "skills": [
-      {
-        "name": "HTML",
-        "level": "Master",
-        "keywords": [
-          "Desarrollo Web", "Frontend"
-        ]
-      },
-      {
-        "name": "CSS",
-        "level": "Master",
-        "keywords": [
-          "Desarrollo Web", "Frontend", "Diseño Responsive"
-        ]
-      },
-      {
-        "name": "JavaScript",
-        "level": "Intermedio",
-        "keywords": [
-          "Desarrollo Web", "Frontend"
-        ]
-      },
-      {
-        "name": "Git",
-        "level": "Avanzado",
-        "keywords": [
-          "Control de Versiones", "Colaboración", "Código Fuente"
-        ]
-      },
-      {
-        "name": "GitHub",
-        "level": "Avanzado",
-        "keywords": [
-          "Control de Versiones", "Colaboración", "Código Fuente", "Git"
-        ]
-      },
-      {
-        "name": "React",
-        "level": "Basico",
-        "keywords": [
-          "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
-        ]
-      },
-      {
-        "name": "Astro",
-        "level": "Basico",
-        "keywords": [
-          "Desarrollo Web", "Frontend", "JavaScript Library"
-        ]
-      }
-    ],
-    "languages": [
-      {
-        "language": "Spanish",
-        "fluency": "Native speaker"
-      },
-      {
-        "language": "English",
-        "fluency": "Intermedio"
-      }
-    ],
-    "interests": [{
-      "name": "Wildlife",
+    },
+    {
+      "name": "EF SET English Certificate - Nivel B1-B2",
+      "date": "",
+      "issuer": "EF SET",
+      "url": ""
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "Avanzado",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "JavaScript (ES6+)",
+        "React JS",
+        "Astro",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Tailwind CSS",
+        "Bootstrap"
       ]
-    }],
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference…"
-    }],
-    "projects": [
-      {
-        "name": "Sencillito.com",
-        "isActive": true,
-        "description": "Plataforma de pago de cuentas y recargas",
-        "highlights": [
-          "Implementación proceso de pago de cuentas",
-          "Desarrollo Voucher impreso",
-          "Mantenimiento UX Experience",
-          "JavaScript & Liferay"
-        ],
-        "url": "https://www.sencillito.com/inicio"
-      },
-      {
-        "name": "Fici",
-        "isActive": true,
-        "description": "Plataforma digital para cine e innovación",
-        "highlights": [
-          "Mantenimiento",
-          "Implementación",
-          "JavaScript"
-        ],
-        "url": "https://www.fici.cl/"
-      },
-      {
-        "name": "Copahue",
-        "isActive": true,
-        "description": "Inmobiliaria y constructora",
-        "highlights": [
-          "Rescatar sitio de intervensión de terceros",
-          "Desarrollo y mantenimiento"
-        ],
-        "url": "https://copahue.cl/"
-      }
-    ]
-  }
+    },
+    {
+      "name": "Backend & Bases de Datos",
+      "level": "Intermedio",
+      "keywords": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "PostgreSQL",
+        "Oracle (PL/SQL)"
+      ]
+    },
+    {
+      "name": "DevOps, Cloud & Herramientas",
+      "level": "Intermedio",
+      "keywords": [
+        "Docker",
+        "Render",
+        "Vercel",
+        "Neon.tech",
+        "Git",
+        "GitHub",
+        "Pipelines CI/CD"
+      ]
+    },
+    {
+      "name": "CMS & Plataformas Enterprise",
+      "level": "Avanzado",
+      "keywords": [
+        "Drupal",
+        "Liferay",
+        "WordPress",
+        "Adobe Experience Manager (AEM)",
+        "Salesforce Marketing Cloud"
+      ]
+    },
+    {
+      "name": "Diseño UX/UI & Metodologías",
+      "level": "Avanzado",
+      "keywords": [
+        "Figma",
+        "Adobe XD",
+        "Diseño accesible (WCAG)",
+        "Responsive design",
+        "Handoff UI a Dev",
+        "Scrum",
+        "Trabajo Ágil"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Intermedio (B1 - B2)"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Sencillito.com",
+      "isActive": true,
+      "description": "Plataforma de pago de cuentas y recargas",
+      "highlights": [
+        "Implementación proceso de pago de cuentas",
+        "Integración de servicios de pago de terceros vía API",
+        "Mantenimiento UX Experience",
+        "JavaScript, Java, Freemarker & Liferay"
+      ],
+      "url": "https://www.sencillito.com",
+      "image": "/projects/sencillito-web.webp",
+      "tags": ["JavaScript", "Bootstrap", "Liferay"]
+    },
+    {
+      "name": "Nescafé",
+      "isActive": true,
+      "description": "Sitio web de la marca Nescafé",
+      "highlights": [
+        "Mantenimiento",
+        "Implementación",
+        "JavaScript"
+      ],
+      "url": "https://www.nescafe.com/cl/",
+      "image": "/projects/nescafe.webp",
+      "tags": ["JavaScript", "Bootstrap"]
+    },
+    {
+      "name": "Copahue",
+      "isActive": true,
+      "description": "Inmobiliaria y constructora",
+      "highlights": [
+        "Rescate de sitio de intervención de terceros",
+        "Desarrollo y mantenimiento"
+      ],
+      "url": "https://copahue.cl/",
+      "image": "/projects/copahue.webp",
+      "tags": ["JavaScript", "WordPress", "Bootstrap"]
+    }
+  ]
+}
