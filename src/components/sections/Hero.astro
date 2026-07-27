@@ -24,12 +24,15 @@ const githubUrl = profiles.find(({ network }) => network === "GitHub")?.url;
     </a>
   </div>
   <h1
-    class="text-4xl font-bold tracking-tight text-gray-600 sm:text-5xl dark:text-white"
+    class="font-mono text-4xl font-bold tracking-tight text-terminal-text sm:text-5xl"
   >
-    Hey, soy {name}
+    <span class="text-neon-cyan" aria-hidden="true">&gt;</span> Hey, soy {name}<span
+      class="text-neon-cyan animate-blink"
+      aria-hidden="true">_</span
+    >
   </h1>
   <p
-    class="mt-6 text-xl text-gray-500 dark:[&>strong]:text-blue-400 [&>strong]:text-blue-500 [&>strong]:font-semibold dark:text-gray-200 text-pretty"
+    class="mt-6 text-xl text-terminal-dim [&>strong]:text-neon-cyan [&>strong]:font-semibold text-pretty"
   >
     <strong>{label}</strong>. De {location.city}, {location.region}. Conectando
     interfaces en React/Astro con APIs y servicios en Java y Spring Boot.

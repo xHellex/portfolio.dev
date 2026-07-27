@@ -9,13 +9,13 @@ import javascript from "../../icons/javascript.astro";
 import LinkButton from "../LinkButton.astro";
 import { cv } from "@/lib/cv";
 
-const TAG_ICONS: Record<string, { class: string; icon: any }> = {
-  "Next.js": { class: "bg-black text-white", icon: NextJS },
-  "Tailwind CSS": { class: "bg-[#003159] text-white", icon: Tailwind },
-  JavaScript: { class: "bg-[#003159] text-white", icon: javascript },
-  Bootstrap: { class: "bg-[#003159] text-white", icon: Boostrap },
-  Liferay: { class: "bg-[#003159] text-white", icon: Liferay },
-  WordPress: { class: "bg-[#003159] text-white", icon: Wordpress },
+const TAG_ICON: Record<string, any> = {
+  "Next.js": NextJS,
+  "Tailwind CSS": Tailwind,
+  JavaScript: javascript,
+  Bootstrap: Boostrap,
+  Liferay: Liferay,
+  WordPress: Wordpress,
 };
 
 const PROJECTS = cv.projects.map(({ name, description, highlights, url, image, tags }) => ({
@@ -23,7 +23,7 @@ const PROJECTS = cv.projects.map(({ name, description, highlights, url, image, t
   description: `${description}. ${highlights.join(", ")}.`,
   link: url,
   image,
-  tags: (tags ?? []).map((tag) => ({ name: tag, ...TAG_ICONS[tag] })),
+  tags: (tags ?? []).map((tag) => ({ name: tag, icon: TAG_ICON[tag] })),
 }));
 ---
 
@@ -32,7 +32,7 @@ const PROJECTS = cv.projects.map(({ name, description, highlights, url, image, t
     PROJECTS.map(({ image, title, description, tags, link }) => (
       <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
         <div class="w-full md:w-1/2">
-          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 border border-terminal-border md:group-hover:shadow-glow md:group-hover:border-neon-cyan/60">
             <img
               alt={title}
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
@@ -43,16 +43,14 @@ const PROJECTS = cv.projects.map(({ name, description, highlights, url, image, t
         </div>
 
         <div class="w-full md:w-1/2 md:max-w-lg">
-          <h3 class="text-2xl font-bold text-blue-500 dark:text-blue-500">
+          <h3 class="text-2xl font-bold text-neon-cyan">
             {title}
           </h3>
           <div class="flex flex-wrap mt-2">
             <ul class="flex flex-row mb-2 gap-x-2">
               {tags.map((tag) => (
                 <li>
-                  <span
-                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-                  >
+                  <span class="flex gap-x-2 items-center rounded-full text-xs bg-terminal-surface border border-terminal-border text-terminal-dim py-1 px-2">
                     <tag.icon class="size-4" />
                     {tag.name}
                   </span>
@@ -60,7 +58,7 @@ const PROJECTS = cv.projects.map(({ name, description, highlights, url, image, t
               ))}
             </ul>
 
-            <div class="mt-2 text-gray-500 dark:text-gray-300 text-pretty">
+            <div class="mt-2 text-terminal-dim text-pretty">
               {description}
             </div>
             <footer class="flex items-end justify-start mt-4 gap-x-4">

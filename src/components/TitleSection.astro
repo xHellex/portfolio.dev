@@ -1,5 +1,6 @@
 <h2
-  class={`flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white ${Astro.props.className}`}
+  class={`group flex items-center mb-6 gap-x-3 font-mono text-2xl text-terminal-text cursor-default transition-[text-shadow] duration-100 hover:[text-shadow:2px_0_theme(colors.red.500),-2px_0_theme(colors.neon.cyan)] ${Astro.props.className}`}
 >
+  <span class="text-neon-cyan" aria-hidden="true">//</span>
   <slot />
 </h2>
