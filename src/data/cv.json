@@ -6,7 +6,8 @@
     "email": "felipe.p_94@hotmail.com",
     "phone": "+56 9 8342 6103",
     "url": null,
-    "summary": "Desarrollador Full-Stack con más de 5 años construyendo interfaces de producción y, cada vez más, los servicios que las sostienen. Mi base está en JavaScript moderno (React, Astro), HTML5 y CSS3, pero mi trabajo diario ya cruza hacia el backend: integración de pasarelas de pago y validación de flujos transaccionales en Sencillito.com, consumo y diseño de APIs, y una base sólida en Java, Spring Boot, PostgreSQL y Oracle PL/SQL que estoy profundizando en mis estudios de Análisis de Sistemas Computacionales en DUOC UC. Me interesa el ciclo completo: del componente accesible en pantalla a la consulta SQL que le da los datos.",
+    "summary": "Soy un Desarrollador Web enfocado en la creación de aplicaciones funcionales y centradas en el usuario. Durante mis más de 5 años de experiencia, he adquirido conocimientos prácticos en Front-End (JavaScript, React, HTML, CSS), participando en la optimización de flujos de pago y plataformas transaccionales. Actualmente, estoy ampliando mi experiencia hacia el Back-End (Java, Spring Boot, PostgreSQL) mediante mis estudios de Análisis de Sistemas Computacionales en DUOC UC, lo que me permite tener una comprensión más completa del ciclo de desarrollo de software.",
+    "cvSummary": "Desarrollador Full-Stack con más de 5 años de experiencia construyendo interfaces de producción y colaborando en los servicios que las sostienen. Cuento con conocimientos prácticos en JavaScript moderno (React, Astro), HTML5 y CSS3, y experiencia aplicada en la integración de pasarelas de pago y validación de flujos transaccionales (Sencillito.com). Además, poseo conocimientos en backend utilizando Java, Spring Boot, PostgreSQL y Oracle PL/SQL, los cuales continúo profundizando en mis estudios de Análisis de Sistemas Computacionales en DUOC UC. Me interesa participar en el ciclo completo del desarrollo: desde la consulta SQL hasta el componente accesible en pantalla.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -225,7 +226,11 @@
       ],
       "url": "https://www.sencillito.com",
       "image": "/projects/sencillito-web.webp",
-      "tags": ["JavaScript", "Bootstrap", "Liferay"]
+      "tags": [
+        "JavaScript",
+        "Bootstrap",
+        "Liferay"
+      ]
     },
     {
       "name": "Nescafé",
@@ -238,7 +243,10 @@
       ],
       "url": "https://www.nescafe.com/cl/",
       "image": "/projects/nescafe.webp",
-      "tags": ["JavaScript", "Bootstrap"]
+      "tags": [
+        "JavaScript",
+        "Bootstrap"
+      ]
     },
     {
       "name": "Copahue",
@@ -250,7 +258,11 @@
       ],
       "url": "https://copahue.cl/",
       "image": "/projects/copahue.webp",
-      "tags": ["JavaScript", "WordPress", "Bootstrap"]
+      "tags": [
+        "JavaScript",
+        "WordPress",
+        "Bootstrap"
+      ]
     }
   ]
 }

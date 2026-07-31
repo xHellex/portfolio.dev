@@ -1,10 +1,10 @@
 ---
-import { cv } from "@/lib/cv";
+const { cv } = Astro.props;
 const { name, image, summary } = cv.basics;
 ---
 
 <article
-  class="flex flex-col items-center justify-center gap-8 text-terminal-dim md:flex-row"
+  class="reveal flex flex-col items-center justify-center gap-8 text-terminal-dim"
 >
   <img
     width="200"

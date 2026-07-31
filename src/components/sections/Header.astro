@@ -1,40 +1,69 @@
 ---
-const navItems = [
-  {
-    title: "experiencia",
-    label: "experiencia",
-    url: "/#experiencia",
-  },
-  {
-    title: "proyectos",
-    label: "proyectos",
-    url: "/#proyectos",
-  },
-  {
-    title: "sobre-mi",
-    label: "sobre-mi",
-    url: "/#sobre-mi",
-  },
-  {
-    title: "contacto",
-    label: "contacto",
-    url: "mailto:felipe.p_94@hotmail.com",
-  },
-];
+const { pathname } = Astro.url;
+const isEnglish = pathname.startsWith("/en");
+
+const navItems = isEnglish
+  ? [
+      { title: "experience", label: "experiencia", url: "/en/#experiencia" },
+      { title: "projects", label: "proyectos", url: "/en/#proyectos" },
+      { title: "about", label: "sobre-mi", url: "/en/#sobre-mi" },
+      {
+        title: "contact",
+        label: "contacto",
+        url: "mailto:felipe.p_94@hotmail.com",
+      },
+    ]
+  : [
+      { title: "experiencia", label: "experiencia", url: "/#experiencia" },
+      { title: "proyectos", label: "proyectos", url: "/#proyectos" },
+      { title: "sobre-mi", label: "sobre-mi", url: "/#sobre-mi" },
+      {
+        title: "contacto",
+        label: "contacto",
+        url: "mailto:felipe.p_94@hotmail.com",
+      },
+    ];
 ---
 
-<header
-  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
->
-  <nav
-    id="header-nav"
-    class="flex items-center px-3 text-sm rounded-full text-terminal-dim"
-  >
-    <span class="pr-2 text-neon-cyan" aria-hidden="true">~$</span>
+<header class="mt-8 lg:mt-16">
+  <!-- Desktop Vertical Menu -->
+  <nav class="hidden lg:block" aria-label="In-page jump links">
+    <ul class="w-max space-y-2">
+      {
+        navItems.map((link) => (
+          <li>
+            <a
+              class="nav-item group flex items-center py-2"
+              aria-label={link.label}
+              href={link.url}
+            >
+              <span class="nav-indicator mr-4 h-px w-8 bg-terminal-dim transition-all group-hover:w-16 group-hover:bg-neon-cyan group-[.active]:w-16 group-[.active]:bg-neon-cyan duration-300" />
+              <span class="nav-text text-xs font-bold uppercase tracking-widest text-terminal-dim group-hover:text-neon-cyan group-[.active]:text-neon-cyan transition-colors duration-300">
+                {link.title}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+      <li class="pt-6">
+        <a
+          href={isEnglish ? "/" : "/en"}
+          class="inline-flex items-center gap-2 px-3 py-1.5 transition whitespace-nowrap text-xs font-bold text-neon-cyan border border-neon-cyan/50 rounded-full hover:bg-neon-cyan hover:text-terminal-bg"
+          aria-label="Toggle language"
+        >
+          {isEnglish ? "ES" : "EN"}
+          <span class="text-[10px] opacity-70">translate</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Horizontal Menu -->
+  <nav class="lg:hidden flex items-center flex-wrap gap-3 text-sm">
     {
       navItems.map((link) => (
         <a
-          class="relative block px-2 py-2 transition hover:text-neon-cyan"
+          class="nav-item relative block transition text-terminal-dim hover:text-neon-cyan whitespace-nowrap font-bold"
           aria-label={link.label}
           href={link.url}
         >
@@ -42,21 +71,29 @@ const navItems = [
         </a>
       ))
     }
+    <a
+      href={isEnglish ? "/" : "/en"}
+      class="ml-auto inline-flex items-center transition whitespace-nowrap text-xs font-bold text-neon-cyan border border-neon-cyan/50 rounded-full px-3 py-1 hover:bg-neon-cyan hover:text-terminal-bg"
+    >
+      {isEnglish ? "ES" : "EN"}
+    </a>
   </nav>
 </header>
 
 <script>
   document.addEventListener("astro:page-load", () => {
     const sections = document.querySelectorAll("section");
-    const navItems = document.querySelectorAll("header nav a");
+    const navItems = document.querySelectorAll(".nav-item");
 
     const callback = (entries: any[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
             if (item.getAttribute("aria-label") == entry.target.id) {
+              item.classList.add("active");
               item.classList.add("text-neon-cyan");
             } else {
+              item.classList.remove("active");
               item.classList.remove("text-neon-cyan");
             }
           });

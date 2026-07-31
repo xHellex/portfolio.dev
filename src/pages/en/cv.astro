@@ -1,25 +1,25 @@
 ---
-import { cv } from "@/lib/cvData";
+import cv from "@/data/cv-en.json";
 
 const { basics, work, skills, education, languages, certificates } = cv;
 
 const MESES = [
-  "Ene",
+  "Jan",
   "Feb",
   "Mar",
-  "Abr",
+  "Apr",
   "May",
   "Jun",
   "Jul",
-  "Ago",
+  "Aug",
   "Sep",
   "Oct",
   "Nov",
-  "Dic",
+  "Dec",
 ];
 
 function formatDate(date: string | null) {
-  if (!date) return "Presente";
+  if (!date) return "Present";
   const [year, month] = date.split("-");
   return `${MESES[Number(month) - 1]} ${year}`;
 }
@@ -31,22 +31,21 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta
       name="description"
-      content={`CV de ${basics.name} — ${basics.label}`}
+      content={`CV of ${basics.name} — ${basics.label}`}
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>CV — {basics.name}</title>
   </head>
   <body>
     <div class="toolbar no-print">
-      <a href="/">← Volver al portafolio</a>
-      <button type="button" onclick="window.print()"
-        >Imprimir / Guardar como PDF</button
+      <a href="/en">← Back to portfolio</a>
+      <button type="button" onclick="window.print()">Print / Save as PDF</button
       >
     </div>
 
@@ -73,12 +72,12 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
       </header>
 
       <section>
-        <h2>Perfil Profesional</h2>
+        <h2>Professional Profile</h2>
         <p>{basics.cvSummary}</p>
       </section>
 
       <section>
-        <h2>Experiencia Profesional</h2>
+        <h2>Professional Experience</h2>
         {
           work.map((job) => (
             <article>
@@ -100,7 +99,7 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
       </section>
 
       <section>
-        <h2>Habilidades Técnicas</h2>
+        <h2>Technical Skills</h2>
         <ul class="skills">
           {
             skills.map(({ name, keywords }) => (
@@ -113,12 +112,12 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
       </section>
 
       <section>
-        <h2>Formación Académica</h2>
+        <h2>Education</h2>
         <ul>
           {
             education.map(({ area, institution, endDate }) => (
               <li>
-                {area} | {institution} | {endDate ? "Completado" : "En curso"}
+                {area} | {institution} | {endDate ? "Completed" : "In Progress"}
               </li>
             ))
           }
@@ -126,9 +125,9 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
       </section>
 
       <section>
-        <h2>Idiomas y Certificaciones</h2>
-        <p>Idiomas: {idiomas}.</p>
-        {certs && <p>Certificaciones: {certs}.</p>}
+        <h2>Languages and Certifications</h2>
+        <p>Languages: {idiomas}.</p>
+        {certs && <p>Certifications: {certs}.</p>}
       </section>
     </main>
 

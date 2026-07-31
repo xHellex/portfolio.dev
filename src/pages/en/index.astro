@@ -1,0 +1,69 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Experience from "../../components/sections/Experience.astro";
+import AboutMe from "../../components/sections/AboutMe.astro";
+import SectionContainer from "../../components/SectionContainer.astro";
+import TitleSection from "../../components/TitleSection.astro";
+import BriefCase from "../../icons/BriefCase.astro";
+import Code from "../../icons/Code.astro";
+import Skillcode from "../../icons/skillcode.astro";
+import Projects from "../../components/sections/Projects.astro";
+import ProfileCheck from "../../icons/ProfileCheck.astro";
+import Hero from "../../components/sections/Hero.astro";
+import Skills from "../../components/sections/Skills.astro";
+import Header from "../../components/sections/Header.astro";
+import cv from "@/data/cv-en.json";
+---
+
+<Layout
+  title="Portfolio Felipe Peñaloza - Full-Stack Developer"
+  description="Full-Stack Developer with 5+ years of experience in JavaScript, React, Astro, Spring Boot, Java. Specialized in Responsive Web Design, Implementations, and API integrations."
+  lang="en"
+>
+  <main class="mx-auto max-w-screen-xl px-4 lg:flex lg:gap-10 xl:gap-16">
+    <!-- Left Panel: Hero (Sticky) -->
+    <div
+      class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24"
+    >
+      <SectionContainer class="pt-32 pb-8 lg:pt-0 lg:pb-0">
+        <Hero cv={cv} />
+        <Header />
+      </SectionContainer>
+    </div>
+
+    <!-- Right Panel: Scrolling Content -->
+    <div class="space-y-24 lg:w-1/2 lg:py-24 pb-24">
+      <SectionContainer id="experiencia">
+        <TitleSection>
+          <BriefCase class="size-8" />
+          Work Experience
+        </TitleSection>
+        <Experience cv={cv} />
+      </SectionContainer>
+
+      <SectionContainer id="proyectos">
+        <TitleSection>
+          <Code class="size-7" />
+          Projects
+        </TitleSection>
+        <Projects cv={cv} />
+      </SectionContainer>
+
+      <SectionContainer>
+        <TitleSection>
+          <Skillcode class="size-7" />
+          Skills
+        </TitleSection>
+        <Skills cv={cv} />
+      </SectionContainer>
+
+      <SectionContainer id="sobre-mi">
+        <TitleSection>
+          <ProfileCheck class="size-8" />
+          About me
+        </TitleSection>
+        <AboutMe cv={cv} />
+      </SectionContainer>
+    </div>
+  </main>
+</Layout>

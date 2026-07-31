@@ -11,13 +11,14 @@ import { ViewTransitions } from "astro:transitions";
 interface Props {
   title: string;
   description: string;
+  lang?: string;
 }
 
-const { description, title } = Astro.props;
+const { description, title, lang = "es" } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -25,6 +26,16 @@ const { description, title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <!-- SEO & OpenGraph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/me.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="/me.webp" />
     <ViewTransitions />
   </head>
 
@@ -35,7 +46,15 @@ const { description, title } = Astro.props;
       [background-image:repeating-linear-gradient(0deg,#fff_0,#fff_1px,transparent_1px,transparent_3px)]"
     >
     </div>
-    <Header />
+
+    <!-- Mouse Glow Effect -->
+    <div
+      id="mouse-glow"
+      class="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300 opacity-0 lg:opacity-100"
+      style="background: radial-gradient(600px at 0px 0px, rgba(95, 245, 224, 0.07), transparent 80%);"
+    >
+    </div>
+
     <slot />
     <Footer />
     <style is:global>
@@ -57,9 +76,26 @@ const { description, title } = Astro.props;
 
         .animate-scanline,
         .animate-blink,
-        .animate-typewriter {
+        .animate-typewriter,
+        .reveal {
           animation: none !important;
+          transition: none !important;
+          opacity: 1 !important;
+          transform: none !important;
         }
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition:
+          opacity 0.8s ease-out,
+          transform 0.8s ease-out;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
       }
 
       #header-nav {
@@ -83,5 +119,39 @@ const { description, title } = Astro.props;
         }
       }
     </style>
+
+    <script>
+      document.addEventListener("astro:page-load", () => {
+        const reveals = document.querySelectorAll(".reveal");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                // Optional: Stop observing once revealed
+                // observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+          },
+        );
+
+        reveals.forEach((el) => observer.observe(el));
+
+        // --- Mouse Tracking Glow Logic ---
+        const glow = document.getElementById("mouse-glow");
+        if (glow) {
+          window.addEventListener("mousemove", (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            glow.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(95, 245, 224, 0.08), transparent 80%)`;
+          });
+        }
+      });
+    </script>
   </body>
 </html>

@@ -5,14 +5,17 @@ import MailIcon from "../../icons/Mail.astro";
 import SocialPill from "../SocialPill.astro";
 import GitHub from "../../icons/GitHub.astro";
 import CV from "../../icons/CV.astro";
-import { cv } from "@/lib/cv";
+const { cv } = Astro.props;
 
 const { name, label, location, profiles, email } = cv.basics;
 const linkedUrl = profiles.find(({ network }) => network === "LinkedIn")?.url;
 const githubUrl = profiles.find(({ network }) => network === "GitHub")?.url;
+
+const { pathname } = Astro.url;
+const isEnglish = pathname.startsWith("/en");
 ---
 
-<div class="max-w-xl">
+<div class="max-w-2xl">
   <div class="flex gap-4 mb-4">
     <a
       href={linkedUrl}
@@ -20,13 +23,16 @@ const githubUrl = profiles.find(({ network }) => network === "GitHub")?.url;
       rel="noopener"
       class="flex items-center transition md:justify-center md:hover:scale-105"
     >
-      <Badge>Disponibilidad Inmediata</Badge>
+      <Badge
+        >{isEnglish ? "Available for hire" : "Disponibilidad Inmediata"}</Badge
+      >
     </a>
   </div>
   <h1
     class="font-mono text-4xl font-bold tracking-tight text-terminal-text sm:text-5xl"
   >
-    <span class="text-neon-cyan" aria-hidden="true">&gt;</span> Hey, soy {name}<span
+    <span class="text-neon-cyan" aria-hidden="true">&gt;</span>
+    {isEnglish ? "Hey, I'm " : "Hey, soy "}{name}<span
       class="text-neon-cyan animate-blink"
       aria-hidden="true">_</span
     >
@@ -34,30 +40,40 @@ const githubUrl = profiles.find(({ network }) => network === "GitHub")?.url;
   <p
     class="mt-6 text-xl text-terminal-dim [&>strong]:text-neon-cyan [&>strong]:font-semibold text-pretty"
   >
-    <strong>{label}</strong>. De {location.city}, {location.region}. Conectando
-    interfaces en React/Astro con APIs y servicios en Java y Spring Boot.
+    <strong>{label}</strong>. {isEnglish ? "From " : "De "}{location.city}, {
+      location.region
+    }.
+    {
+      isEnglish
+        ? "I have experience connecting React/Astro interfaces with APIs and backend services using Java and Spring Boot."
+        : "Cuento con experiencia conectando interfaces en React/Astro con APIs y conocimientos en servicios con Java y Spring Boot."
+    }
   </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
+  <nav class="grid grid-cols-2 gap-4 mt-8 sm:flex sm:flex-wrap text-center">
     <SocialPill href={`mailto:${email}`}>
       <MailIcon class="size-4" />
-      Contáctame
+      {isEnglish ? "Contact me" : "Contáctame"}
     </SocialPill>
-    {linkedUrl && (
-      <SocialPill href={linkedUrl}>
-        <LinkedIn class="size-4" />
-        LinkedIn
-      </SocialPill>
-    )}
-    {githubUrl && (
-      <SocialPill href={githubUrl}>
-        <GitHub class="size-4" />
-        GitHub
-      </SocialPill>
-    )}
+    {
+      linkedUrl && (
+        <SocialPill href={linkedUrl}>
+          <LinkedIn class="size-4" />
+          LinkedIn
+        </SocialPill>
+      )
+    }
+    {
+      githubUrl && (
+        <SocialPill href={githubUrl}>
+          <GitHub class="size-4" />
+          GitHub
+        </SocialPill>
+      )
+    }
 
-    <SocialPill href="/cv">
+    <SocialPill href={isEnglish ? "/en/cv" : "/cv"}>
       <CV class="size-4" />
-      CV-Print
+      {isEnglish ? "Print-CV" : "CV-Print"}
     </SocialPill>
   </nav>
 </div>

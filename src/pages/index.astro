@@ -11,24 +11,33 @@ import Projects from "../components/sections/Projects.astro";
 import ProfileCheck from "../icons/ProfileCheck.astro";
 import Hero from "../components/sections/Hero.astro";
 import Skills from "../components/sections/Skills.astro";
+import Header from "../components/sections/Header.astro";
+import { cv } from "@/lib/cvData";
 ---
 
 <Layout
   title="Portfolio Felipe Peñaloza - Front-End Developer"
   description="Desarrollador Front-End con +5 años de experiencia en Javascript, React Js, Astro, Boostrap, Bulma CSS, Tailwind. Especializado en Responsive Web Design, Implementaciones y UX Experiencie."
 >
-  <main class="px-4">
-    <SectionContainer class="py-16 md:py-36">
-      <Hero />
-    </SectionContainer>
+  <main class="mx-auto max-w-screen-xl px-4 lg:flex lg:gap-10 xl:gap-16">
+    <!-- Panel Izquierdo: Hero (Pegajoso) -->
+    <div
+      class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24"
+    >
+      <SectionContainer class="pt-32 pb-8 lg:pt-0 lg:pb-0">
+        <Hero cv={cv} />
+        <Header />
+      </SectionContainer>
+    </div>
 
-    <div class="space-y-24">
+    <!-- Panel Derecho: Contenido Deslizable -->
+    <div class="space-y-24 lg:w-1/2 lg:py-24 pb-24">
       <SectionContainer id="experiencia">
         <TitleSection>
           <BriefCase class="size-8" />
           Experiencia laboral
         </TitleSection>
-        <Experience />
+        <Experience cv={cv} />
       </SectionContainer>
 
       <SectionContainer id="proyectos">
@@ -36,7 +45,7 @@ import Skills from "../components/sections/Skills.astro";
           <Code class="size-7" />
           Proyectos
         </TitleSection>
-        <Projects />
+        <Projects cv={cv} />
       </SectionContainer>
 
       <SectionContainer>
@@ -44,7 +53,7 @@ import Skills from "../components/sections/Skills.astro";
           <Skillcode class="size-7" />
           Skills
         </TitleSection>
-        <Skills />
+        <Skills cv={cv} />
       </SectionContainer>
 
       <SectionContainer id="sobre-mi">
@@ -52,7 +61,7 @@ import Skills from "../components/sections/Skills.astro";
           <ProfileCheck class="size-8" />
           Sobre mí
         </TitleSection>
-        <AboutMe />
+        <AboutMe cv={cv} />
       </SectionContainer>
     </div>
   </main>

@@ -1,14 +1,42 @@
 ---
 import ExperienceItems from "../ExperienceItems.astro";
-import { cv } from "@/lib/cv";
+const { cv } = Astro.props;
 
-const MESES = [
-  "Ene", "Feb", "Mar", "Abr", "May", "Jun",
-  "Jul", "Ago", "Sep", "Oct", "Nov", "Dic",
-];
+const { pathname } = Astro.url;
+const isEnglish = pathname.startsWith("/en");
+
+const MESES = isEnglish
+  ? [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ]
+  : [
+      "Ene",
+      "Feb",
+      "Mar",
+      "Abr",
+      "May",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dic",
+    ];
 
 function formatDate(date: string | null) {
-  if (!date) return "Presente";
+  if (!date) return isEnglish ? "Present" : "Presente";
   const [year, month] = date.split("-");
   return `${MESES[Number(month) - 1]} ${year}`;
 }
@@ -24,7 +52,7 @@ const EXPERIENCE = cv.work.map((job) => ({
 <ol class="relative mt-16">
   {
     EXPERIENCE.map((experience) => (
-      <li class="">
+      <li class="reveal">
         <ExperienceItems {...experience} />
       </li>
     ))

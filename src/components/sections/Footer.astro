@@ -1,4 +1,6 @@
 ---
+const { pathname } = Astro.url;
+const isEnglish = pathname.startsWith("/en");
 const currentYear = new Date().getFullYear();
 ---
 
@@ -6,22 +8,27 @@ const currentYear = new Date().getFullYear();
   class="opacity-80 m-4 min-[375px]:pl-4 md:pl-0 mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center"
 >
   <div
-    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"
+    class="rounded-lg w-full max-w-screen-xl mx-auto flex flex-col items-center md:flex-row md:justify-between py-4"
   >
-    <span class="text-sm sm:text-center text-terminal-dim"
+    <span class="text-sm text-center text-terminal-dim block"
       >© {currentYear} Felipe Peñaloza.
     </span>
     <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium text-terminal-text sm:mt-0"
+      class="flex flex-wrap justify-center items-center mt-4 text-sm font-medium text-terminal-text md:mt-0 gap-4 md:gap-6"
     >
       <li>
-        <a href="/#sobre-mi" class="hover:text-neon-cyan me-4 md:me-6">Sobre mí</a>
+        <a
+          href={isEnglish ? "/en/#sobre-mi" : "/#sobre-mi"}
+          class="hover:text-neon-cyan transition-colors"
+          >{isEnglish ? "About me" : "Sobre mí"}</a
+        >
       </li>
       <li>
         <a
           id="contacto"
           href="mailto:felipe.p_94@hotmail.com"
-          class="hover:text-neon-cyan">Contacto</a
+          class="hover:text-neon-cyan transition-colors"
+          >{isEnglish ? "Contact" : "Contacto"}</a
         >
       </li>
     </ul>

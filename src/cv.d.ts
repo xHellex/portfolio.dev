@@ -21,6 +21,7 @@ interface Basics {
   phone: string
   url: string | null
   summary: string
+  cvSummary: string
   location: Location
   profiles: Array<Profiles>
 }
