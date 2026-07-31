@@ -8,8 +8,12 @@ import CV from "../../icons/CV.astro";
 const { cv } = Astro.props;
 
 const { name, label, location, profiles, email } = cv.basics;
-const linkedUrl = profiles.find(({ network }) => network === "LinkedIn")?.url;
-const githubUrl = profiles.find(({ network }) => network === "GitHub")?.url;
+const linkedUrl = profiles.find(
+  ({ network }: any) => network === "LinkedIn",
+)?.url;
+const githubUrl = profiles.find(
+  ({ network }: any) => network === "GitHub",
+)?.url;
 
 const { pathname } = Astro.url;
 const isEnglish = pathname.startsWith("/en");

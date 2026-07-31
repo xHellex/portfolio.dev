@@ -5,11 +5,11 @@ const { skills } = cv;
 
 <div class="flex flex-col gap-6">
   {
-    skills.map(({ name, keywords }) => (
+    skills.map(({ name, keywords }: any) => (
       <div class="reveal">
         <h4 class="mb-2 text-sm font-semibold text-neon-cyan">{name}</h4>
         <ul class="inline-flex flex-wrap gap-2">
-          {keywords.map((keyword) => (
+          {keywords.map((keyword: any) => (
             <li>
               <span class="inline-flex items-center justify-center gap-2 px-4 py-1 text-terminal-text transition bg-terminal-surface border border-terminal-border rounded-full text-md hover:border-neon-cyan/60 hover:text-neon-cyan hover:shadow-glow max-w-fit focus:outline-none">
                 {keyword}
