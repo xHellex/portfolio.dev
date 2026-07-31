@@ -59,11 +59,13 @@ const navItems = isEnglish
   </nav>
 
   <!-- Mobile Horizontal Menu -->
-  <nav class="lg:hidden flex items-center flex-wrap gap-3 text-sm">
+  <nav
+    class="lg:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center justify-center flex-wrap gap-x-4 gap-y-2 text-xs font-bold bg-terminal-surface/70 backdrop-blur-md px-6 py-3 rounded-full border border-terminal-border shadow-md w-max max-w-[95vw]"
+  >
     {
       navItems.map((link) => (
         <a
-          class="nav-item relative block transition text-terminal-dim hover:text-neon-cyan whitespace-nowrap font-bold"
+          class="nav-item relative block transition text-terminal-dim hover:text-neon-cyan whitespace-nowrap"
           aria-label={link.label}
           href={link.url}
         >
@@ -73,7 +75,7 @@ const navItems = isEnglish
     }
     <a
       href={isEnglish ? "/" : "/en"}
-      class="ml-auto inline-flex items-center transition whitespace-nowrap text-xs font-bold text-neon-cyan border border-neon-cyan/50 rounded-full px-3 py-1 hover:bg-neon-cyan hover:text-terminal-bg"
+      class="ml-auto inline-flex items-center transition whitespace-nowrap font-bold text-neon-cyan border border-neon-cyan/50 rounded-full px-2 py-0.5 hover:bg-neon-cyan hover:text-terminal-bg"
     >
       {isEnglish ? "ES" : "EN"}
     </a>
