@@ -225,7 +225,7 @@
   "projects": [
     {
       "name": "Microservicios Cloud Native",
-      "isActive": true,
+      "isActive": false,
       "employer": "Proyecto Personal",
       "github": "https://github.com/xHellex",
       "description": "API REST en Java 21 con JWT y arquitectura Zero Trust",
@@ -242,7 +242,7 @@
     },
     {
       "name": "Plataforma web con Quality Pipeline",
-      "isActive": true,
+      "isActive": false,
       "employer": "Proyecto Personal",
       "github": "https://github.com/xHellex",
       "description": "Spring Boot + MySQL con CI/CD en Jenkins",

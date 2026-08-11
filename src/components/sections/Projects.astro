@@ -19,26 +19,31 @@ const TAG_ICON: Record<string, any> = {
   WordPress: Wordpress,
 };
 
-const PROJECTS = cv.projects.map(
-  ({
-    name,
-    description,
-    highlights,
-    url,
-    image,
-    tags,
-    github,
-    employer,
-  }: any) => ({
-    title: name,
-    description: `${description}. ${highlights.join(", ")}.`,
-    link: url,
-    github,
-    employer,
-    image,
-    tags: (tags ?? []).map((tag: any) => ({ name: tag, icon: TAG_ICON[tag] })),
-  }),
-);
+const PROJECTS = cv.projects
+  .filter((project: any) => project.isActive !== false)
+  .map(
+    ({
+      name,
+      description,
+      highlights,
+      url,
+      image,
+      tags,
+      github,
+      employer,
+    }: any) => ({
+      title: name,
+      description: `${description}. ${highlights.join(", ")}.`,
+      link: url,
+      github,
+      employer,
+      image,
+      tags: (tags ?? []).map((tag: any) => ({
+        name: tag,
+        icon: TAG_ICON[tag],
+      })),
+    }),
+  );
 ---
 
 <div class="flex flex-col gap-y-16">

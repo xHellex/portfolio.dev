@@ -31,7 +31,7 @@
   "work": [
     {
       "name": "Freelance",
-      "position": "Independent Web Developer",
+      "position": "Desarrollador Web Independiente",
       "url": null,
       "startDate": "2026-04-01",
       "endDate": null,
@@ -57,7 +57,7 @@
     },
     {
       "name": "Freelance",
-      "position": "Independent Web Developer",
+      "position": "Desarrollador Web Independiente",
       "url": null,
       "startDate": "2024-02-01",
       "endDate": "2025-01-31",
@@ -98,7 +98,7 @@
     },
     {
       "name": "Inventa S.A. · Agencia Publis · Xpectrum Technologies · Digital Beat SpA",
-      "position": "Web Designer & Developer",
+      "position": "Diseñador y Desarrollador Web",
       "url": null,
       "startDate": "2015-01-01",
       "endDate": "2018-04-30",
@@ -225,7 +225,7 @@
   "projects": [
     {
       "name": "Microservicios Cloud Native",
-      "isActive": true,
+      "isActive": false,
       "employer": "Proyecto Personal",
       "github": "https://github.com/xHellex",
       "description": "API REST en Java 21 con JWT y arquitectura Zero Trust",
@@ -242,7 +242,7 @@
     },
     {
       "name": "Plataforma web con Quality Pipeline",
-      "isActive": true,
+      "isActive": false,
       "employer": "Proyecto Personal",
       "github": "https://github.com/xHellex",
       "description": "Spring Boot + MySQL con CI/CD en Jenkins",
