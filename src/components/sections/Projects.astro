@@ -69,7 +69,7 @@ const PROJECTS = cv.projects.map(
                 {tags.map((tag: any) => (
                   <li>
                     <span class="flex gap-x-2 items-center rounded-full text-xs bg-terminal-surface border border-terminal-border text-terminal-dim py-1 px-2">
-                      <tag.icon class="size-4" />
+                      {tag.icon && <tag.icon class="size-4" />}
                       {tag.name}
                     </span>
                   </li>

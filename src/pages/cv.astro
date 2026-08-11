@@ -80,7 +80,7 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
       <section>
         <h2>Experiencia Profesional</h2>
         {
-          work.map((job) => (
+          work.map((job: any) => (
             <article>
               <h3>
                 {job.position} | {job.name}
@@ -90,7 +90,7 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
                 {formatDate(job.startDate)} - {formatDate(job.endDate)}
               </p>
               <ul>
-                {job.highlights.map((highlight) => (
+                {job.highlights.map((highlight: any) => (
                   <li>{highlight}</li>
                 ))}
               </ul>
