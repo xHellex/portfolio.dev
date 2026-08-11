@@ -1,268 +1,314 @@
 {
-    "basics": {
-        "name": "Felipe Peñaloza Oyarzún",
-        "label": "Full Stack Developer with over 5 years of experience",
-        "image": "/me.webp",
-        "email": "felipe.p_94@hotmail.com",
-        "phone": "+56 9 8342 6103",
-        "url": null,
-        "summary": "I am a Web Developer focused on creating functional and user-centric applications. During my 5+ years of experience, I have acquired practical knowledge in Front-End (JavaScript, React, HTML, CSS), participating in the optimization of payment flows and transactional platforms. Currently, I am expanding my experience towards the Back-End (Java, Spring Boot, PostgreSQL) through my Computer Systems Analysis studies at DUOC UC, which gives me a more complete understanding of the software development lifecycle.",
-        "cvSummary": "Full-Stack Developer with over 5 years of experience building production interfaces and collaborating on the services that support them. I have practical knowledge in modern JavaScript (React, Astro), HTML5 and CSS3, and applied experience in integrating payment gateways and validating transactional flows (Sencillito.com). Additionally, I possess backend knowledge using Java, Spring Boot, PostgreSQL and Oracle PL/SQL, which I continue to deepen in my Computer Systems Analysis studies at DUOC UC. I am interested in participating in the full development lifecycle: from the SQL query to the accessible on-screen component.",
-        "location": {
-            "address": "",
-            "postalCode": "",
-            "city": "Santiago",
-            "countryCode": "CHL",
-            "region": "Chile"
-        },
-        "profiles": [
-            {
-                "network": "LinkedIn",
-                "username": "Felipe Peñaloza Oyarzún",
-                "url": "https://linkedin.com/in/felipe-andres-penaloza-oyarzun"
-            },
-            {
-                "network": "GitHub",
-                "username": "xHellex",
-                "url": "https://github.com/xHellex"
-            }
-        ]
+  "basics": {
+    "name": "Felipe Peñaloza Oyarzún",
+    "label": "Front-End Developer with 10 years of experience",
+    "image": "/me.webp",
+    "email": "felipe.p_94@hotmail.com",
+    "phone": "+56 9 8342 6103",
+    "url": null,
+    "summary": "Front-End Developer with 10 years of experience building scalable, accessible, and user-centric web interfaces. Specialized in enterprise and transactional platforms — Liferay, AEM, Drupal, and Salesforce Marketing Cloud — focusing on payment flows, WCAG accessibility, and performance. I complement frontend skills with Java and Spring Boot backend development for API integration and participation in the full product lifecycle.",
+    "cvSummary": "Front-End Developer with 10 years of experience building scalable, accessible, and user-centric web interfaces. Specialized in enterprise and transactional platforms — Liferay, AEM, Drupal, and Salesforce Marketing Cloud — focusing on payment flows, WCAG accessibility, and performance. I complement frontend skills with Java and Spring Boot backend development for API integration and participation in the full product lifecycle.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Santiago",
+      "countryCode": "CHL",
+      "region": "Chile"
     },
-    "work": [
-        {
-            "name": "Freelance Projects",
-            "position": "Full Stack Developer",
-            "url": null,
-            "location": "Chile",
-            "startDate": "2026-04-22",
-            "endDate": null,
-            "summary": "Design, development, and implementation of scalable web applications using Java, Spring Boot, React and PostgreSQL. Creation of RESTful APIs and relational database management.",
-            "highlights": [
-                "Design and implementation of scalable web applications with Java, Spring Boot, React, and PostgreSQL",
-                "Creation of RESTful APIs",
-                "Relational database modeling and management"
-            ]
-        },
-        {
-            "name": "Publicis Groupe",
-            "position": "Webmaster",
-            "url": null,
-            "location": "Santiago, Chile",
-            "startDate": "2025-02-01",
-            "endDate": "2026-04-30",
-            "summary": "Development of custom Drupal components and maintenance of AEM landings. Implementation of complex forms, contests, and multi-device digital campaigns. HTML email markup optimized for Salesforce Marketing Cloud.",
-            "highlights": [
-                "Development of custom Drupal components and AEM landing page maintenance",
-                "Forms and campaigns connected to Salesforce Marketing Cloud, managing data flow between the frontend and the automation platform",
-                "HTML email markup optimized for Salesforce Marketing Cloud"
-            ]
-        },
-        {
-            "name": "IGT (Sencillito.com)",
-            "position": "Front-End Developer",
-            "url": "https://www.sencillito.com",
-            "location": "Chile",
-            "startDate": "2021-07-01",
-            "endDate": "2024-02-29",
-            "summary": "Development of front-end components for Liferay and maintenance of the payment platform with JavaScript. Integration of payment methods, card validations, and secure flow architecture.",
-            "highlights": [
-                "End-to-end integration of payment methods: connection with external gateways, card validation on client and server, and design of secure transactional flows on Liferay",
-                "Performance optimization",
-                "Compliance with accessibility standards (WCAG)"
-            ]
-        },
-        {
-            "name": "Grupo B&L",
-            "position": "Front-End Developer",
-            "url": null,
-            "location": "Santiago, Chile",
-            "startDate": "2018-07-01",
-            "endDate": "2021-06-30",
-            "summary": "Development of WordPress websites, custom theme creation, and plugin optimization. Building corporate and real estate websites using HTML5, CSS3, and JavaScript.",
-            "highlights": [
-                "Development of WordPress sites and custom themes",
-                "Construction of corporate and real estate websites",
-                "Campaign management in Mailchimp/Doppler",
-                "Google Analytics integration"
-            ]
-        },
-        {
-            "name": "Inventa S.A., Agencia Publis, Digital Beat SpA",
-            "position": "Web Designer and Developer",
-            "url": null,
-            "startDate": "2015-01-01",
-            "endDate": "2018-12-31",
-            "summary": "Roles focused on markup, intranet design, and email marketing campaigns.",
-            "highlights": [
-                "Markup and intranet design",
-                "Development of email marketing campaigns"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "DUOC UC",
-            "url": "https://www.duoc.cl/",
-            "area": "Computer Programming Analyst",
-            "studyType": "Higher Education",
-            "startDate": "2025-03-11",
-            "endDate": null,
-            "score": "",
-            "courses": []
-        },
-        {
-            "institution": "Universidad Gabriela Mistral",
-            "url": "https://www.ugm.cl/",
-            "area": "Crossmedia Producer",
-            "studyType": "Higher Education",
-            "startDate": "2013-03-11",
-            "endDate": "2017-11-28",
-            "score": "",
-            "courses": []
-        }
-    ],
-    "awards": [],
-    "certificates": [
-        {
-            "name": "Web Developer (Intensive Course)",
-            "date": "2021-12-07",
-            "issuer": "Escalab",
-            "url": "https://www.credly.com/badges/f8b05633-3770-4ba6-8c2f-887cb393e0ba?source=linked_in_profile"
-        },
-        {
-            "name": "EF SET English Certificate - Level B1-B2",
-            "date": "",
-            "issuer": "EF SET",
-            "url": ""
-        }
-    ],
-    "publications": [],
-    "skills": [
-        {
-            "name": "Frontend",
-            "level": "Advanced",
-            "keywords": [
-                "JavaScript (ES6+)",
-                "React JS",
-                "Astro",
-                "HTML5",
-                "CSS3",
-                "SASS",
-                "Tailwind CSS",
-                "Bootstrap"
-            ]
-        },
-        {
-            "name": "Backend & Databases",
-            "level": "Intermediate",
-            "keywords": [
-                "Java",
-                "Spring Boot",
-                "Spring Security",
-                "PostgreSQL",
-                "Oracle (PL/SQL)"
-            ]
-        },
-        {
-            "name": "DevOps, Cloud & Tools",
-            "level": "Intermediate",
-            "keywords": [
-                "Docker",
-                "Render",
-                "Vercel",
-                "Neon.tech",
-                "Git",
-                "GitHub",
-                "CI/CD Pipelines"
-            ]
-        },
-        {
-            "name": "CMS & Enterprise Platforms",
-            "level": "Advanced",
-            "keywords": [
-                "Drupal",
-                "Liferay",
-                "WordPress",
-                "Adobe Experience Manager (AEM)",
-                "Salesforce Marketing Cloud"
-            ]
-        },
-        {
-            "name": "UX/UI Design & Methodologies",
-            "level": "Advanced",
-            "keywords": [
-                "Figma",
-                "Adobe XD",
-                "Accessible Design (WCAG)",
-                "Responsive design",
-                "UI to Dev Handoff",
-                "Scrum",
-                "Agile Framework"
-            ]
-        }
-    ],
-    "languages": [
-        {
-            "language": "Spanish",
-            "fluency": "Native"
-        },
-        {
-            "language": "English",
-            "fluency": "Intermediate (B1 - B2)"
-        }
-    ],
-    "interests": [],
-    "references": [],
-    "projects": [
-        {
-            "name": "Sencillito.com",
-            "isActive": true,
-            "description": "Bill payment and recharge platform",
-            "highlights": [
-                "Implementation of the bill payment process",
-                "Integration of third-party payment services via API",
-                "UX Experience maintenance",
-                "JavaScript, Java, Freemarker & Liferay"
-            ],
-            "url": "https://www.sencillito.com",
-            "image": "/projects/sencillito-web.webp",
-            "tags": [
-                "JavaScript",
-                "Bootstrap",
-                "Liferay"
-            ]
-        },
-        {
-            "name": "Nescafé",
-            "isActive": true,
-            "description": "Nescafé brand website",
-            "highlights": [
-                "Maintenance",
-                "Implementation",
-                "JavaScript"
-            ],
-            "url": "https://www.nescafe.com/cl/",
-            "image": "/projects/nescafe.webp",
-            "tags": [
-                "JavaScript",
-                "Bootstrap"
-            ]
-        },
-        {
-            "name": "Copahue",
-            "isActive": true,
-            "description": "Real estate and construction company",
-            "highlights": [
-                "Rescued site from third-party intervention",
-                "Development and maintenance"
-            ],
-            "url": "https://copahue.cl/",
-            "image": "/projects/copahue.webp",
-            "tags": [
-                "JavaScript",
-                "WordPress",
-                "Bootstrap"
-            ]
-        }
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Felipe Peñaloza Oyarzún",
+        "url": "https://linkedin.com/in/felipe-andres-penaloza-oyarzun"
+      },
+      {
+        "network": "GitHub",
+        "username": "xHellex",
+        "url": "https://github.com/xHellex"
+      }
     ]
+  },
+  "work": [
+    {
+      "name": "Freelance",
+      "position": "Independent Web Developer",
+      "url": null,
+      "startDate": "2026-04-01",
+      "endDate": null,
+      "summary": "Auditoría técnica y de seguridad de aplicación React + Node.js: identificación y corrección de vulnerabilidades críticas. Despliegue en cPanel. Mantención de sitios WordPress y Shopify.",
+      "highlights": [
+        "Auditoría técnica y de seguridad de aplicación React + Node.js: identificación y corrección de vulnerabilidades críticas (XSS almacenado, endpoints de escritura sin protección, manejo inseguro de sesión en cliente)",
+        "Despliegue y puesta en producción de la aplicación Node.js sobre cPanel, resolviendo bugs de arranque y de servido de assets estáticos",
+        "Mantención y optimización de sitios WordPress y tiendas Shopify para clientes recurrentes"
+      ]
+    },
+    {
+      "name": "Publicis Groupe",
+      "position": "Webmaster",
+      "url": null,
+      "startDate": "2025-02-01",
+      "endDate": "2026-04-01",
+      "summary": "Desarrollo frontend de landings de concursos y formularios para campañas de marcas como Nescafé y Tarragona, integrando el flujo de datos con backend en Firebase.",
+      "highlights": [
+        "Desarrollo frontend de landings de concursos y formularios para campañas de marcas como Nescafé y Tarragona, integrando el flujo de datos con backend en Firebase",
+        "Desarrollo de componentes personalizados para Drupal y mantenimiento de landings en Adobe Experience Manager (AEM), en experiencias multidispositivo",
+        "Maquetación de correos electrónicos en HTML compatibles con múltiples clientes de correo, optimizados para Salesforce Marketing Cloud"
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Independent Web Developer",
+      "url": null,
+      "startDate": "2024-02-01",
+      "endDate": "2025-01-31",
+      "summary": "Mantención y personalización de tiendas Shopify. Desarrollo de sitios WordPress para el sector inmobiliario.",
+      "highlights": [
+        "Mantención y personalización de tiendas Shopify: ajustes de theme, corrección de errores y mejoras de conversión",
+        "Desarrollo de sitios WordPress para el sector inmobiliario, incluyendo themes a medida y fichas de propiedades",
+        "Asistencia y reemplazos en campañas de email marketing para agencias, junto con formación autodidacta en desarrollo backend (Java, Spring Boot) y despliegue con Docker"
+      ]
+    },
+    {
+      "name": "IGT — Sencillito.com",
+      "position": "Front-End Developer",
+      "url": "https://www.sencillito.com",
+      "startDate": "2021-07-01",
+      "endDate": "2024-02-29",
+      "summary": "Desarrollo y mantenimiento de componentes front-end sobre Liferay para una de las principales plataformas de pago de cuentas y recargas de Chile.",
+      "highlights": [
+        "Desarrollo y mantenimiento de componentes front-end sobre Liferay para una de las principales plataformas de pago de cuentas y recargas de Chile",
+        "Optimización de los flujos del proceso de pago e implementación del reporte de errores dentro del flujo transaccional, mejorando la trazabilidad de fallos en producción",
+        "Implementación del módulo de registro de cuenta corriente del usuario, habilitando el proceso de devoluciones automáticas",
+        "Desarrollo de dos formatos de comprobante de pago: voucher general para pago presencial de cuentas y voucher doble para pagos FONASA",
+        "Integración de medios de pago con pasarelas externas, validación de tarjetas en cliente y servidor, y cumplimiento de estándares de accesibilidad WCAG en los flujos críticos"
+      ]
+    },
+    {
+      "name": "Grupo B&L",
+      "position": "Front-End Developer",
+      "url": null,
+      "startDate": "2018-07-01",
+      "endDate": "2021-06-30",
+      "summary": "Desarrollo, implementación y mantenimiento de sitios web para el sector inmobiliario en WordPress.",
+      "highlights": [
+        "Desarrollo, implementación y mantenimiento de sitios web para el sector inmobiliario en WordPress: themes personalizados desde cero y optimización de plugins",
+        "Maquetación de sitios corporativos con HTML5, CSS3, Bootstrap y JavaScript, con diseño responsive multidispositivo",
+        "Gestión de campañas en Mailchimp y Doppler, e integración de seguimiento con Google Analytics"
+      ]
+    },
+    {
+      "name": "Inventa S.A. · Agencia Publis · Xpectrum Technologies · Digital Beat SpA",
+      "position": "Web Designer & Developer",
+      "url": null,
+      "startDate": "2015-01-01",
+      "endDate": "2018-04-30",
+      "summary": "Maquetación de sitios web, diseño y desarrollo de intranets corporativas y ejecución de campañas de email marketing.",
+      "highlights": [
+        "Maquetación de sitios web, diseño y desarrollo de intranets corporativas y ejecución de campañas de email marketing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "DUOC UC",
+      "url": "https://www.duoc.cl/",
+      "area": "Computer Programming Analyst",
+      "studyType": "Higher Education",
+      "startDate": "2025-03-11",
+      "endDate": null,
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Universidad Gabriela Mistral",
+      "url": "https://www.ugm.cl/",
+      "area": "Crossmedia Producer",
+      "studyType": "Higher Education",
+      "startDate": "2013-03-11",
+      "endDate": "2017-11-28",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Web Developer (Intensive Course)",
+      "date": "2021-12-07",
+      "issuer": "Escalab",
+      "url": "https://www.credly.com/badges/f8b05633-3770-4ba6-8c2f-887cb393e0ba?source=linked_in_profile"
+    },
+    {
+      "name": "EF SET English Certificate - Level B1-B2",
+      "date": "",
+      "issuer": "EF SET",
+      "url": ""
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "Advanced",
+      "keywords": [
+        "JavaScript (ES6+)",
+        "React JS",
+        "Astro",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Tailwind CSS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "name": "Backend & Databases",
+      "level": "Intermediate",
+      "keywords": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "PostgreSQL",
+        "Oracle (PL/SQL)"
+      ]
+    },
+    {
+      "name": "DevOps, Cloud & Tools",
+      "level": "Intermediate",
+      "keywords": [
+        "Docker",
+        "Render",
+        "Vercel",
+        "Neon.tech",
+        "Git",
+        "GitHub",
+        "CI/CD Pipelines"
+      ]
+    },
+    {
+      "name": "CMS & Enterprise Platforms",
+      "level": "Advanced",
+      "keywords": [
+        "Drupal",
+        "Liferay",
+        "WordPress",
+        "Adobe Experience Manager (AEM)",
+        "Salesforce Marketing Cloud"
+      ]
+    },
+    {
+      "name": "UX/UI Design & Methodologies",
+      "level": "Advanced",
+      "keywords": [
+        "Figma",
+        "Adobe XD",
+        "Accessible Design (WCAG)",
+        "Responsive design",
+        "UI to Dev Handoff",
+        "Scrum",
+        "Agile Framework"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate (B1 - B2)"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Microservicios Cloud Native",
+      "isActive": true,
+      "employer": "Proyecto Personal",
+      "github": "https://github.com/xHellex",
+      "description": "API REST en Java 21 con JWT y arquitectura Zero Trust",
+      "highlights": [
+        "Desplegada en AWS (EC2, S3, EFS, API Gateway)",
+        "Mensajería con RabbitMQ y CI/CD en GitHub Actions"
+      ],
+      "url": null,
+      "image": "/projects/sencillito-web.webp",
+      "tags": [
+        "Java",
+        "Spring Boot"
+      ]
+    },
+    {
+      "name": "Plataforma web con Quality Pipeline",
+      "isActive": true,
+      "employer": "Proyecto Personal",
+      "github": "https://github.com/xHellex",
+      "description": "Spring Boot + MySQL con CI/CD en Jenkins",
+      "highlights": [
+        "Análisis estático en SonarQube, escaneo con OWASP ZAP y Dependency-Check",
+        "Cobertura sobre 60% con JaCoCo"
+      ],
+      "url": null,
+      "image": "/projects/nescafe.webp",
+      "tags": [
+        "Java",
+        "Spring Boot"
+      ]
+    },
+    {
+      "name": "Sencillito.com",
+      "isActive": true,
+      "employer": "IGT",
+      "github": null,
+      "description": "Plataforma de pago de cuentas y recargas",
+      "highlights": [
+        "Implementación proceso de pago de cuentas",
+        "Integración de servicios de pago de terceros vía API"
+      ],
+      "url": "https://www.sencillito.com",
+      "image": "/projects/sencillito-web.webp",
+      "tags": [
+        "JavaScript",
+        "Bootstrap",
+        "Liferay"
+      ]
+    },
+    {
+      "name": "Nescafé",
+      "isActive": true,
+      "employer": "Publicis Groupe",
+      "github": null,
+      "description": "Sitio web de la marca Nescafé",
+      "highlights": [
+        "Frontend landing pages",
+        "Firebase backend integration"
+      ],
+      "url": "https://www.nescafe.com/cl/",
+      "image": "/projects/nescafe.webp",
+      "tags": [
+        "JavaScript",
+        "Bootstrap"
+      ]
+    },
+    {
+      "name": "Copahue",
+      "isActive": true,
+      "employer": "Grupo B&L",
+      "github": null,
+      "description": "Inmobiliaria y constructora",
+      "highlights": [
+        "Rescate de sitio de intervención de terceros",
+        "Desarrollo y mantenimiento"
+      ],
+      "url": "https://copahue.cl/",
+      "image": "/projects/copahue.webp",
+      "tags": [
+        "JavaScript",
+        "WordPress",
+        "Bootstrap"
+      ]
+    }
+  ]
 }
