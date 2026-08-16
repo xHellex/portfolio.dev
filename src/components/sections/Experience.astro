@@ -1,5 +1,11 @@
 ---
 import ExperienceItems from "../ExperienceItems.astro";
+import type { CV } from "@/cvSchema";
+
+interface Props {
+  cv: CV;
+}
+
 const { cv } = Astro.props;
 
 const { pathname } = Astro.url;
@@ -41,7 +47,7 @@ function formatDate(date: string | null) {
   return `${MESES[Number(month) - 1]} ${year}`;
 }
 
-const EXPERIENCE = cv.work.map((job: any) => ({
+const EXPERIENCE = cv.work.map((job) => ({
   date: `${formatDate(job.startDate)} - ${formatDate(job.endDate)}`,
   title: job.position,
   company: job.location ? `${job.name} · ${job.location}` : job.name,
@@ -51,7 +57,7 @@ const EXPERIENCE = cv.work.map((job: any) => ({
 
 <ol class="relative mt-16">
   {
-    EXPERIENCE.map((experience: any) => (
+    EXPERIENCE.map((experience) => (
       <li class="reveal">
         <ExperienceItems {...experience} />
       </li>

@@ -1,5 +1,5 @@
 ---
-import cv from "@/data/cv-en.json";
+import { cvEn as cv } from "@/lib/cvData";
 
 const { basics, work, skills, education, languages, certificates } = cv;
 
@@ -79,7 +79,7 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
       <section>
         <h2>Professional Experience</h2>
         {
-          work.map((job: any) => (
+          work.map((job) => (
             <article>
               <h3>
                 {job.position} | {job.name}
@@ -89,7 +89,7 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
                 {formatDate(job.startDate)} - {formatDate(job.endDate)}
               </p>
               <ul>
-                {job.highlights.map((highlight: any) => (
+                {job.highlights.map((highlight) => (
                   <li>{highlight}</li>
                 ))}
               </ul>

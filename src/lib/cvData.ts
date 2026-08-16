@@ -1,4 +1,6 @@
-import raw from "@cv-data";
-import type { CV } from "@/cv";
+import rawEs from "@/data/cv.json";
+import rawEn from "@/data/cv-en.json";
+import { cvSchema } from "@/cvSchema";
 
-export const cv = raw satisfies CV;
+export const cv = cvSchema.parse(rawEs);
+export const cvEn = cvSchema.parse(rawEn);

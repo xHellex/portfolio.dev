@@ -1,4 +1,10 @@
 ---
+import type { CV } from "@/cvSchema";
+
+interface Props {
+  cv: CV;
+}
+
 const { cv } = Astro.props;
 const { name, image, summary } = cv.basics;
 ---
