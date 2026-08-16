@@ -116,9 +116,10 @@ const certs = (certificates ?? []).map(({ name }) => name).join(", ");
         <h2>Formación Académica</h2>
         <ul>
           {
-            education.map(({ area, institution, endDate }) => (
+            education.map(({ area, institution, endDate, studyType }) => (
               <li>
-                {area} | {institution} | {endDate ? "Completado" : "En curso"}
+                {area} | {institution} |{" "}
+                {studyType || (endDate ? "Completado" : "En curso")}
               </li>
             ))
           }
