@@ -9,10 +9,10 @@ const { cv } = Astro.props;
 
 const { name, label, location, profiles, email } = cv.basics;
 const linkedUrl = profiles.find(
-  ({ network }: any) => network === "LinkedIn",
+  ({ network }: { network: string }) => network === "LinkedIn",
 )?.url;
 const githubUrl = profiles.find(
-  ({ network }: any) => network === "GitHub",
+  ({ network }: { network: string }) => network === "GitHub",
 )?.url;
 
 const { pathname } = Astro.url;

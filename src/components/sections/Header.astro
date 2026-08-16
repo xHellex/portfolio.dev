@@ -87,7 +87,7 @@ const navItems = isEnglish
     const sections = document.querySelectorAll("section");
     const navItems = document.querySelectorAll(".nav-item");
 
-    const callback = (entries: any[]) => {
+    const callback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
