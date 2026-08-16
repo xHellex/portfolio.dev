@@ -6,7 +6,7 @@
 ![Zod](https://img.shields.io/badge/Zod-3.25-3068b7?style=for-the-badge&logo=zod&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-1.62-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
 
-Un portafolio personal moderno y de grado **Senior / Enterprise**, diseñado para destacar 10 años de experiencia en desarrollo Front-End. Construido con una arquitectura robusta, SSG ultrarrápido y control de calidad automatizado.
+Un portafolio personal moderno diseñado para destacar 10 años de experiencia en desarrollo Front-End. Construido con una arquitectura robusta, SSG ultrarrápido y control de calidad automatizado.
 
 [🌍 **Ver Portafolio en Vivo**](https://portfolio-felipe-penaloza.netlify.app/)
 

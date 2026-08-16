@@ -51,7 +51,7 @@ const EXPERIENCE = cv.work.map((job) => ({
   date: `${formatDate(job.startDate)} - ${formatDate(job.endDate)}`,
   title: job.position,
   company: job.location ? `${job.name} · ${job.location}` : job.name,
-  description: job.highlights.join(" "),
+  description: job.highlights,
 }));
 ---
 

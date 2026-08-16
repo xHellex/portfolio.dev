@@ -1,13 +1,13 @@
 {
   "basics": {
     "name": "Felipe Peñaloza Oyarzún",
-    "label": "Desarrollador Front-End con 10 años de experiencia",
+    "label": "Desarrollador Front-End  ·  10 años de experiencia  ·  Plataformas Enterprise y Transaccionales",
     "image": "/me.webp",
     "email": "felipe.p_94@hotmail.com",
     "phone": "+56 9 8342 6103",
     "url": null,
-    "summary": "Desarrollador Front-End con 10 años de experiencia construyendo interfaces web escalables, accesibles y centradas en el usuario. Especializado en plataformas enterprise y transaccionales — Liferay, AEM, Drupal y Salesforce Marketing Cloud — con foco en flujos de pago, accesibilidad WCAG y rendimiento. Complemento el frontend con backend en Java y Spring Boot para integrar APIs y participar en el ciclo completo del producto.",
-    "cvSummary": "Desarrollador Front-End con 10 años de experiencia construyendo interfaces web escalables, accesibles y centradas en el usuario. Especializado en plataformas enterprise y transaccionales — Liferay, AEM, Drupal y Salesforce Marketing Cloud — con foco en flujos de pago, accesibilidad WCAG y rendimiento. Complemento el frontend con backend en Java y Spring Boot para integrar APIs y participar en el ciclo completo del producto.",
+    "summary": "Desarrollador Front-End con 10 años de experiencia construyendo interfaces web escalables, accesibles y centradas en el usuario. Especializado en plataformas enterprise y transaccionales — Liferay, AEM, Drupal y Salesforce Marketing Cloud — con foco en flujos de pago, accesibilidad WCAG y rendimiento. Complemento el frontend con backend en Java y Spring Boot para integrar APIs.",
+    "cvSummary": "Desarrollador Front-End con 10 años de experiencia construyendo interfaces web escalables, accesibles y centradas en el usuario. Especializado en plataformas enterprise y transaccionales — Liferay, AEM, Drupal y Salesforce Marketing Cloud — con foco en flujos de pago, accesibilidad WCAG y rendimiento. Complemento el frontend con backend en Java y Spring Boot para integrar APIs.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -37,9 +37,9 @@
       "endDate": null,
       "summary": "Auditoría técnica y de seguridad de aplicación React + Node.js: identificación y corrección de vulnerabilidades críticas. Despliegue en cPanel. Mantención de sitios WordPress y Shopify.",
       "highlights": [
-        "Auditoría técnica y de seguridad de aplicación React + Node.js: identificación y corrección de vulnerabilidades críticas (XSS almacenado, endpoints de escritura sin protección, manejo inseguro de sesión en cliente)",
-        "Despliegue y puesta en producción de la aplicación Node.js sobre cPanel, resolviendo bugs de arranque y de servido de assets estáticos",
-        "Mantención y optimización de sitios WordPress y tiendas Shopify para clientes recurrentes"
+        "Auditoría técnica y de seguridad de aplicación React + Node.js: identificación y corrección de vulnerabilidades críticas (XSS almacenado, endpoints de escritura sin protección, manejo inseguro de sesión en cliente).",
+        "Despliegue en producción de la aplicación Node.js sobre cPanel, resolviendo bugs de arranque y de servido de assets estáticos.",
+        "Mantención de sitios WordPress y tiendas Shopify, y desarrollo de un portafolio en Astro con TypeScript estricto, validación Zod y suite E2E en Playwright."
       ]
     },
     {
@@ -50,9 +50,9 @@
       "endDate": "2026-04-01",
       "summary": "Desarrollo frontend de landings de concursos y formularios para campañas de marcas como Nescafé y Tarragona, integrando el flujo de datos con backend en Firebase.",
       "highlights": [
-        "Desarrollo frontend de landings de concursos y formularios para campañas de marcas como Nescafé y Tarragona, integrando el flujo de datos con backend en Firebase",
-        "Desarrollo de componentes personalizados para Drupal y mantenimiento de landings en Adobe Experience Manager (AEM), en experiencias multidispositivo",
-        "Maquetación de correos electrónicos en HTML compatibles con múltiples clientes de correo, optimizados para Salesforce Marketing Cloud"
+        "Desarrollo frontend de landings de concursos y formularios para campañas de marcas como Nescafé y Tarragona, integrando el flujo de datos con backend en Firebase.",
+        "Desarrollo de componentes personalizados para Drupal y mantenimiento de landings en Adobe Experience Manager (AEM), en experiencias multidispositivo.",
+        "Maquetación de correos electrónicos en HTML compatibles con múltiples clientes de correo, optimizados para Salesforce Marketing Cloud."
       ]
     },
     {
@@ -63,9 +63,9 @@
       "endDate": "2025-01-31",
       "summary": "Mantención y personalización de tiendas Shopify. Desarrollo de sitios WordPress para el sector inmobiliario.",
       "highlights": [
-        "Mantención y personalización de tiendas Shopify: ajustes de theme, corrección de errores y mejoras de conversión",
-        "Desarrollo de sitios WordPress para el sector inmobiliario, incluyendo themes a medida y fichas de propiedades",
-        "Asistencia y reemplazos en campañas de email marketing para agencias, junto con formación autodidacta en desarrollo backend (Java, Spring Boot) y despliegue con Docker"
+        "Mantención y personalización de tiendas Shopify: ajustes de theme, corrección de errores y mejoras de conversión.",
+        "Desarrollo de sitios WordPress para el sector inmobiliario, incluyendo themes a medida y fichas de propiedades.",
+        "Asistencia y reemplazos en campañas de email marketing para agencias, junto con formación autodidacta en desarrollo backend (Java, Spring Boot) y despliegue con Docker."
       ]
     },
     {
@@ -76,11 +76,11 @@
       "endDate": "2024-02-29",
       "summary": "Desarrollo y mantenimiento de componentes front-end sobre Liferay para una de las principales plataformas de pago de cuentas y recargas de Chile.",
       "highlights": [
-        "Desarrollo y mantenimiento de componentes front-end sobre Liferay para una de las principales plataformas de pago de cuentas y recargas de Chile",
-        "Optimización de los flujos del proceso de pago e implementación del reporte de errores dentro del flujo transaccional, mejorando la trazabilidad de fallos en producción",
-        "Implementación del módulo de registro de cuenta corriente del usuario, habilitando el proceso de devoluciones automáticas",
-        "Desarrollo de dos formatos de comprobante de pago: voucher general para pago presencial de cuentas y voucher doble para pagos FONASA",
-        "Integración de medios de pago con pasarelas externas, validación de tarjetas en cliente y servidor, y cumplimiento de estándares de accesibilidad WCAG en los flujos críticos"
+        "Desarrollo y mantenimiento de componentes front-end sobre Liferay para una de las principales plataformas de pago de cuentas y recargas de Chile.",
+        "Optimización de los flujos del proceso de pago e implementación del reporte de errores dentro del flujo transaccional, mejorando la trazabilidad de fallos en producción.",
+        "Implementación del módulo de registro de cuenta corriente del usuario, habilitando el proceso de devoluciones automáticas.",
+        "Desarrollo de dos formatos de comprobante de pago: voucher general para pago presencial de cuentas y voucher doble para pagos FONASA.",
+        "Integración de medios de pago con pasarelas externas, validación de tarjetas en cliente y servidor, y cumplimiento de estándares de accesibilidad WCAG en los flujos críticos."
       ]
     },
     {
@@ -91,9 +91,9 @@
       "endDate": "2021-06-30",
       "summary": "Desarrollo, implementación y mantenimiento de sitios web para el sector inmobiliario en WordPress.",
       "highlights": [
-        "Desarrollo, implementación y mantenimiento de sitios web para el sector inmobiliario en WordPress: themes personalizados desde cero y optimización de plugins",
-        "Maquetación de sitios corporativos con HTML5, CSS3, Bootstrap y JavaScript, con diseño responsive multidispositivo",
-        "Gestión de campañas en Mailchimp y Doppler, e integración de seguimiento con Google Analytics"
+        "Desarrollo, implementación y mantenimiento de sitios web para el sector inmobiliario en WordPress: themes personalizados desde cero y optimización de plugins.",
+        "Maquetación de sitios corporativos con HTML5, CSS3, Bootstrap y JavaScript, con diseño responsive multidispositivo.",
+        "Gestión de campañas en Mailchimp y Doppler, e integración de seguimiento con Google Analytics."
       ]
     },
     {
@@ -104,7 +104,7 @@
       "endDate": "2018-04-30",
       "summary": "Maquetación de sitios web, diseño y desarrollo de intranets corporativas y ejecución de campañas de email marketing.",
       "highlights": [
-        "Maquetación de sitios web, diseño y desarrollo de intranets corporativas y ejecución de campañas de email marketing"
+        "Maquetación de sitios web, diseño y desarrollo de intranets corporativas y ejecución de campañas de email marketing."
       ]
     }
   ],
@@ -113,7 +113,7 @@
       "institution": "DUOC UC",
       "url": "https://www.duoc.cl/",
       "area": "Analista Programador Computacional",
-      "studyType": "Educación Superior",
+      "studyType": "En curso",
       "startDate": "2025-03-11",
       "endDate": null,
       "score": "",
@@ -123,7 +123,7 @@
       "institution": "Universidad Gabriela Mistral",
       "url": "https://www.ugm.cl/",
       "area": "Productor Crossmedia",
-      "studyType": "Educación Superior",
+      "studyType": "no finalizada",
       "startDate": "2013-03-11",
       "endDate": "2017-11-28",
       "score": "",
@@ -140,7 +140,7 @@
     },
     {
       "name": "EF SET English Certificate - Nivel B1",
-      "date": "",
+      "date": "2024",
       "issuer": "EF SET",
       "url": ""
     }
@@ -152,61 +152,70 @@
       "level": "Avanzado",
       "keywords": [
         "JavaScript (ES6+)",
+        "TypeScript",
         "React JS",
         "Astro",
         "HTML5",
         "CSS3",
         "SASS",
         "Tailwind CSS",
-        "Bootstrap"
+        "Bootstrap",
+        "diseño responsive",
+        "accesibilidad (WCAG)"
       ]
     },
     {
-      "name": "Backend & Bases de Datos",
-      "level": "Intermedio",
-      "keywords": [
-        "Java",
-        "Spring Boot",
-        "Spring Security",
-        "PostgreSQL",
-        "Oracle (PL/SQL)"
-      ]
-    },
-    {
-      "name": "DevOps, Cloud & Herramientas",
-      "level": "Intermedio",
-      "keywords": [
-        "Docker",
-        "Render",
-        "Vercel",
-        "Neon.tech",
-        "Git",
-        "GitHub",
-        "Pipelines CI/CD"
-      ]
-    },
-    {
-      "name": "CMS & Plataformas Enterprise",
+      "name": "CMS y plataformas enterprise",
       "level": "Avanzado",
       "keywords": [
-        "Drupal",
         "Liferay",
-        "WordPress",
         "Adobe Experience Manager (AEM)",
+        "Drupal",
+        "WordPress",
+        "Shopify",
         "Salesforce Marketing Cloud"
       ]
     },
     {
-      "name": "Diseño UX/UI & Metodologías",
+      "name": "Backend y bases de datos",
+      "level": "Intermedio",
+      "keywords": [
+        "Java (17/21)",
+        "Spring Boot",
+        "Spring Security",
+        "APIs RESTful",
+        "Firebase",
+        "PostgreSQL",
+        "MySQL",
+        "Oracle (PL/SQL)"
+      ]
+    },
+    {
+      "name": "Testing, calidad y DevOps",
+      "level": "Intermedio",
+      "keywords": [
+        "Playwright (E2E)",
+        "Zod",
+        "SonarQube",
+        "OWASP ZAP",
+        "JaCoCo",
+        "Docker",
+        "Git",
+        "pipelines CI/CD",
+        "AWS",
+        "Vercel",
+        "Netlify"
+      ]
+    },
+    {
+      "name": "Metodologías",
       "level": "Avanzado",
       "keywords": [
-        "Figma",
-        "Adobe XD",
-        "Diseño accesible (WCAG)",
-        "Responsive design",
-        "Handoff UI a Dev",
         "Scrum",
-        "Trabajo Ágil"
+        "trabajo ágil",
+        "Jira",
+        "Figma",
+        "handoff UI a desarrollo"
       ]
     }
   ],
