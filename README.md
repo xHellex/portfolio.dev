@@ -69,9 +69,4 @@ npm install
 └── tsconfig.json           # Configuración de compilador en modo Strict
 ```
 
-## � Documentación Continua
-
-Las modificaciones relevantes desde la planeación original pueden encontrarse en el historial de Artifacts en la configuración base si ha sido implementada. Todo el flujo E2E ha sido documentado localmente en logs de reportería Playwright.
-
----
 *Construido por **Felipe Peñaloza Oyarzún***
