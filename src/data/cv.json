@@ -250,6 +250,23 @@
       ]
     },
     {
+      "name": "PayFlow Simulator",
+      "isActive": true,
+      "employer": "Proyecto Personal",
+      "github": "https://github.com/xHellex/payflow-simulator",
+      "description": "Simulador interactivo de pagos de cuentas y recargas construído en Next.js",
+      "highlights": [
+        "Implementación E2E en Playwright",
+        "CI/CD con GitHub Actions y métricas comprobables en SonarQube"
+      ],
+      "url": "https://payflow-simulator-one.vercel.app/",
+      "image": "/projects/sencillito-web.webp",
+      "tags": [
+        "Next.js",
+        "Tailwind CSS"
+      ]
+    },
+    {
       "name": "Plataforma web con Quality Pipeline",
       "isActive": false,
       "employer": "Proyecto Personal",
