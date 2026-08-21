@@ -101,6 +101,7 @@ export const ProjectSchema = z.object({
     github: z.string().nullable().optional(),
     employer: z.string().nullable().optional(),
     image: z.string().optional(),
+    imageMobile: z.string().optional(),
     tags: z.array(z.string()).optional(),
 });
 

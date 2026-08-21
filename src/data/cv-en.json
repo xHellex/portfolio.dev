@@ -260,7 +260,8 @@
         "GitHub Actions CI/CD and metrics via SonarQube"
       ],
       "url": "https://payflow-simulator-one.vercel.app/",
-      "image": "/projects/sencillito-web.webp",
+      "image": "/projects/payflow-desktop.png",
+      "imageMobile": "/projects/payflow-mobile.png",
       "tags": [
         "Next.js",
         "Tailwind CSS"
