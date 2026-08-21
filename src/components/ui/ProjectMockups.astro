@@ -1,0 +1,33 @@
+---
+import SafariMockup from "./SafariMockup.astro";
+import IPhoneMockup from "./IPhoneMockup.astro";
+
+interface Props {
+    srcDesktop?: string;
+    srcMobile?: string;
+    url?: string | null;
+}
+
+const { srcDesktop, srcMobile, url } = Astro.props;
+const displayUrl = url
+    ? url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")
+    : "localhost";
+---
+
+<div
+    class="relative w-full flex flex-col justify-center items-center group/mockup py-4 px-2 overflow-visible min-h-[300px]"
+>
+    <!-- Safari Mockup (Desktop) -->
+    <div
+        class="relative w-[95%] sm:w-[90%] transition-all duration-700 ease-out sm:group-hover/mockup:-translate-x-4 sm:group-hover/mockup:-rotate-[1deg] z-0 drop-shadow-md"
+    >
+        <SafariMockup src={srcDesktop} url={displayUrl} class="w-full" />
+    </div>
+
+    <!-- iPhone Mockup (Mobile) -->
+    <div
+        class="absolute right-[0%] sm:right-[5%] bottom-[-5%] sm:bottom-0 w-[30%] sm:w-[28%] transition-all duration-700 ease-out delay-75 sm:group-hover/mockup:translate-x-4 sm:group-hover/mockup:-translate-y-4 sm:group-hover/mockup:rotate-[2deg] z-10 drop-shadow-2xl"
+    >
+        <IPhoneMockup src={srcMobile || srcDesktop} class="w-full" />
+    </div>
+</div>

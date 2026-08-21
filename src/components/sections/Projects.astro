@@ -8,6 +8,7 @@ import Link from "../../icons/Link.astro";
 import GitHub from "../../icons/GitHub.astro";
 import javascript from "../../icons/javascript.astro";
 import LinkButton from "../LinkButton.astro";
+import ProjectMockups from "../ui/ProjectMockups.astro";
 import type { CV, Project } from "@/cvSchema";
 
 interface Props {
@@ -90,20 +91,11 @@ const professionalProjects = cv.projects
             <article class="reveal flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 p-4 rounded-xl transition duration-500 hover:bg-terminal-border/10">
               <div class="w-full md:w-1/2">
                 <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 border border-terminal-border md:group-hover:shadow-glow md:group-hover:border-neon-cyan/60 md:group-hover:bg-neon-cyan/5">
-                  <div class="relative w-full h-full aspect-video bg-terminal-surface/20 p-2 overflow-hidden rounded-xl">
-                    <img
-                      alt={title}
-                      class="absolute inset-x-2 inset-y-2 lg:inset-x-4 lg:inset-y-4 w-[90%] h-auto rounded border border-terminal-border shadow-md transition duration-500 md:group-hover:scale-105"
-                      loading="lazy"
-                      src={image}
-                    />
-                    <img
-                      alt={`${title} mobile aspect`}
-                      class="absolute bottom-[-15%] right-[-5%] w-[35%] aspect-[9/19] object-cover object-left-top rounded-[15%] border-[6px] border-terminal-bg shadow-2xl transition duration-500 md:group-hover:-translate-y-4 md:group-hover:scale-110 z-10"
-                      loading="lazy"
-                      src={imageMobile || image}
-                    />
-                  </div>
+                  <ProjectMockups
+                    srcDesktop={image}
+                    srcMobile={imageMobile}
+                    url={link}
+                  />
                 </div>
               </div>
 
@@ -175,20 +167,11 @@ const professionalProjects = cv.projects
             <article class="reveal flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 p-4 rounded-xl transition duration-500 hover:bg-terminal-border/10">
               <div class="w-full md:w-1/2">
                 <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 border border-terminal-border md:group-hover:shadow-glow md:group-hover:border-neon-cyan/60 md:group-hover:bg-neon-cyan/5">
-                  <div class="relative w-full h-full aspect-video bg-terminal-surface/20 p-2 overflow-hidden rounded-xl">
-                    <img
-                      alt={title}
-                      class="absolute inset-x-2 inset-y-2 lg:inset-x-4 lg:inset-y-4 w-[90%] h-auto rounded border border-terminal-border shadow-md transition duration-500 md:group-hover:scale-105"
-                      loading="lazy"
-                      src={image}
-                    />
-                    <img
-                      alt={`${title} mobile aspect`}
-                      class="absolute bottom-[-15%] right-[-5%] w-[35%] aspect-[9/19] object-cover object-left-top rounded-[15%] border-[6px] border-terminal-bg shadow-2xl transition duration-500 md:group-hover:-translate-y-4 md:group-hover:scale-110 z-10"
-                      loading="lazy"
-                      src={imageMobile || image}
-                    />
-                  </div>
+                  <ProjectMockups
+                    srcDesktop={image}
+                    srcMobile={imageMobile}
+                    url={link}
+                  />
                 </div>
               </div>
 
