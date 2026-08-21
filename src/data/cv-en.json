@@ -295,7 +295,8 @@
         "Integración de servicios de pago de terceros vía API"
       ],
       "url": "https://www.sencillito.com",
-      "image": "/projects/sencillito-web.webp",
+      "image": "/projects/sencillito-desktop.png",
+      "imageMobile": "/projects/sencillito-mobile.png",
       "tags": [
         "JavaScript",
         "Bootstrap",
@@ -313,7 +314,8 @@
         "Firebase backend integration"
       ],
       "url": "https://www.nescafe.com/cl/",
-      "image": "/projects/nescafe.webp",
+      "image": "/projects/nescafe-desktop.png",
+      "imageMobile": "/projects/nescafe-mobile.png",
       "tags": [
         "JavaScript",
         "Bootstrap"
@@ -330,7 +332,8 @@
         "Desarrollo y mantenimiento"
       ],
       "url": "https://copahue.cl/",
-      "image": "/projects/copahue.webp",
+      "image": "/projects/copahue-desktop.png",
+      "imageMobile": "/projects/copahue-mobile.png",
       "tags": [
         "JavaScript",
         "WordPress",
