@@ -308,15 +308,16 @@
       "isActive": true,
       "employer": "Publicis Groupe",
       "github": null,
-      "description": "Sitio web de la marca Nescafé",
+      "description": "Sitio web de la marca Nescafé: landing de producto, concursos e información",
       "highlights": [
-        "Frontend landing pages",
-        "Firebase backend integration"
+        "Frontend de landings de producto, concursos e información corporativa",
+        "Desarrollo de componentes en Drupal integrados con JavaScript y Bootstrap"
       ],
       "url": "https://www.nescafe.com/cl/",
       "image": "/projects/nescafe-desktop.png",
       "imageMobile": "/projects/nescafe-mobile.png",
       "tags": [
+        "Drupal",
         "JavaScript",
         "Bootstrap"
       ]

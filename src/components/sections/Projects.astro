@@ -4,6 +4,7 @@ import Tailwind from "../../icons/Tailwind.astro";
 import Boostrap from "../../icons/Boostrap.astro";
 import Liferay from "../../icons/Liferay.astro";
 import Wordpress from "../../icons/Wordpress.astro";
+import Drupal from "../../icons/Drupal.astro";
 import Link from "../../icons/Link.astro";
 import GitHub from "../../icons/GitHub.astro";
 import javascript from "../../icons/javascript.astro";
@@ -24,6 +25,7 @@ const TAG_ICON: Record<string, (_props: Record<string, unknown>) => unknown> = {
   Bootstrap: Boostrap,
   Liferay: Liferay,
   WordPress: Wordpress,
+  Drupal: Drupal,
 };
 
 const isEnglish = Astro.url.pathname.startsWith("/en");
@@ -88,7 +90,7 @@ const professionalProjects = cv.projects
             github,
             employer,
           }) => (
-            <article class="reveal flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 p-4 rounded-xl transition duration-500 hover:bg-terminal-border/10">
+            <article class="reveal flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 p-4 rounded-xl">
               <div class="w-full md:w-1/2 flex items-center justify-center p-2 sm:p-0">
                 <ProjectMockups
                   srcDesktop={image}
@@ -162,7 +164,7 @@ const professionalProjects = cv.projects
             github,
             employer,
           }) => (
-            <article class="reveal flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 p-4 rounded-xl transition duration-500 hover:bg-terminal-border/10">
+            <article class="reveal flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 p-4 rounded-xl">
               <div class="w-full md:w-1/2 flex items-center justify-center p-2 sm:p-0">
                 <ProjectMockups
                   srcDesktop={image}
